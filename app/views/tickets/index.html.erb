@@ -1,0 +1,25 @@
+
+<h1><%=_('Tickets')%></h1>
+
+<table class='display'>
+  <thead>
+  <tr>
+  <th><%= _('Ticket-ID') %></th>
+  <th><%= _('Subject') %></th>
+  <th><%= _('Progress') %></th>
+  <th><%= _('Status') %></th>
+  </tr> 
+  </thead>
+  <tbody>
+<% @tickets.each do |ticket| %>
+<tr>
+  <td><%= link_to(ticket.code,ticket_path(ticket.id))%></td>
+  <td><%= ticket.subject%></td>
+  <td><%= ticket.progress %>%</td>
+  <td><%= ticket.status%></td>
+</tr>
+<% end %>
+  </tbody>
+</table>
+<% @js << "$('table.display').dataTable(#{data_table_options(:iDisplayLength => 100,:aaSorting=>[])});" %>
+

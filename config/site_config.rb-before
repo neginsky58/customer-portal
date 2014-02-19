@@ -1,0 +1,40 @@
+SITE_CONFIG = {}
+SITE_CONFIG[:company_name]  = 'MAXNET'
+SITE_CONFIG[:default_language]  = 'pt'
+
+SITE_CONFIG[:company_hid]   = 'maxnet'
+SITE_CONFIG[:portal_name]   = 'My MAXNET'
+SITE_CONFIG[:support_email] = 'support@maxnet.ao'
+SITE_CONFIG[:smtp_server] = 'smtp.maxnet.ao'
+SITE_CONFIG[:pop3_server] = 'pop3.maxnet.ao'
+SITE_CONFIG[:webmail_server] = 'http://webmail.maxnet.ao'
+SITE_CONFIG[:website] = 'http://www.maxnet.ao/'
+SITE_CONFIG[:view_directory] = 'app/views_maxnet'
+
+SITE_CONFIG[:contact_full_html] = <<CEND
+<b>Internet Technologies Angola, Lda</b><br/>
+  <table>
+    <tr>
+      <td valign='top'> Tel:
+      </td>
+      <td valign='top'>
+           OFFICE +244 227 286 000<br>
+           OFFICE +244 924 770 290/1<br>
+           After hours +244 928 818 521
+      </td>
+    </tr>
+    <tr><td valign='top'>Skype:</td>
+        <td valign='top'>internet-technologies-angola</td>
+    </tr>
+    <tr><td valign='top'>Email:</td>
+        <td valign='top'>support@maxnet.ao<br>
+                         sales@maxnet.ao<br>
+        </td>
+    </tr>
+ </table>
+CEND
+
+TEXT_DOMAIN = 'mbms'
+DEFAULT_LOCALE = 'pt'
+MODULES = ['mail', 'graph', 'support', 'configuration'].freeze
+POP3_SERVER = 'pop3.maxnet.ao'

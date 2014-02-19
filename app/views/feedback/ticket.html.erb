@@ -1,0 +1,31 @@
+<%= headline _("Feedback Form") %>
+
+<%= 
+   r = _("Thank you for contacting our support. To improve our service we kindly
+   as you to fill out this form. It will allow us to review service quality provided. <br>
+   Please note that only the team supervisor will have access to the results.<br><br>
+   <i>Thank You!</i>
+").html_safe
+
+%>
+
+<p>
+
+<%= headline_small _("Feedback for Ticket") %>
+<span style='font-size:15pt'>
+<%= @ticket.code %>
+</span>
+<br>
+<span style='font-size:13pt;color:gray;'>
+<%= @ticket.subject %>
+</span>
+
+
+<%# form_tag :action => 'ticket_submit' do %>
+<%= form_tag feedback_path(:id=>@ticket.code,:ticket_token=>@ticket.token),:method=>:put do %>
+
+<%= render :partial => 'form_feedback_ticket'  %>
+
+<%= submit_tag _('Send') %>
+
+<% end %>

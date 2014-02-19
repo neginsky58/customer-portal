@@ -1,0 +1,46 @@
+<h1><%= _('Create a new ticket.') %></h1>
+
+<% if @errors and @errors.size > 0 %>
+  <h3><%= _('Error! Please check:') %></h3>
+  <% @errors.each do |error| %>
+    <i><%= error %></i>
+  <% end %>
+  <br/>  <br/>
+<% end %>
+
+
+<%= form_for(@ticket) do |f| %>
+<table>
+
+  <tr><td><%= _('Subject:') %></td><td><%= f.text_field :subject %></td></tr>
+
+  <tr><td><%= _('Site:') %></td><td><%= f.select :circuit_id, [[_('(n/a)'), '']] + @session[:user].customer.circuits.collect { |c| [c.site, c.id ]  }  %></td></tr>
+
+  <tr><td><%= _("Type of problem:") %></td><td><%= select_tag 'type',
+            options_for_select(
+                [[_('Other'), 'support'],
+                 [_('Network problems'), 'support'],
+                 [_('Request technical assistance'), 'support']
+                 ], params[:type]) %></td></tr>
+
+
+  <tr><td><%= _('Priority:') %></td><td><%= f.select(:priority,Ticket.priorities.collect{|k,v|[v,k]}.sort{|x,y|y.last<=>x.last})%></td></tr>
+
+  <tr><td><%= _('Contact:') %><br><%= small _("Your contact") %></td><td>
+     <% contacts = []
+        @session[:user].customer.contacts.each do |c|
+           [c.email_work, c.email_private, c.email_other].each do |email|
+              next if email.nil?
+              next if email.empty?
+              contacts << ["#{c.firstname} #{c.lastname} <#{email}>", "#{email},#{c.id}"]
+           end
+        end
+     %><%= select_tag 'contact',
+            options_for_select(contacts, params[:contact]) %> </td></tr>
+
+  <tr><td colspan="2"><%= small _('Please describe your request/problem as detailed as possible:') %><br><%= text_area_tag 'content','',:rows=>'8',:cols=>'78' %></td></tr>
+
+  <tr><td colspan="2"><%= f.submit(_('Create Ticket / Send request'))%></td></tr>
+
+</table>
+<% end %>

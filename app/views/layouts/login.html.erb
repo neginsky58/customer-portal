@@ -1,0 +1,37 @@
+<html>
+<TITLE><%= get_portal_name %> - <%= @page_title %></TITLE>
+ <%= stylesheet_link_tag "mm.css", :media => "all" %>
+ <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<%=  javascript_include_tag :defaults %>
+<%= csrf_meta_tag %>
+</head>
+<body>
+<div class='logoblock'>
+<%= image_tag 'maxnet.ao.gif' %>
+</div>
+
+<br>
+<%= render :partial => 'sessions/menu' if !@session[:user].nil? %>
+
+<%= render_location @location %><br><br>
+
+<div class='pagecontent'>
+<%= render :partial => 'sessions/submenu' if @submenu %>
+
+<%= yield %>
+</div>
+<div id='footer'>
+(c) 2006-TODAY <a href='http://www.internet.ao/' target='_other'>Internet Technologies Angola, Lda</a>
+</div>
+
+
+
+<% if ENV['RAILS_ENV'] == 'development' then %>
+
+<hr>
+<%= flash.inspect %>
+<%= session.inspect %>
+<% end %>
+
+</body>
+</html>

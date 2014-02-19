@@ -1,0 +1,10 @@
+<h1><%= @agent.name %></h1>
+<br>
+<br>
+<% if !@agent.public_contact_html.to_s.strip.empty? then %>
+ <%= @agent.public_contact_html.html_safe %>
+<% else %>
+ See <a href='<%= SITE_CONFIG[:website] %>' target='_other'>Website</a> for details.
+<% end %>
+<br>
+

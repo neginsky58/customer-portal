@@ -1,0 +1,58 @@
+
+<%= headline _("Hotspot account %s" % @dp.username) %>
+
+<div>
+ <span style='font-size:19pt'><%= _("Current State:") %>
+  <% color = @dp.online? ? 'green' : 'gray' %>
+  <b style='font-size:20pt;margin-left:10px;color:<%= color %>' >
+   <%= @dp.online? ? _("ONLINE") : _("OFFLINE")  %>   
+  </b>
+ </span>
+</div>
+<% if false and @can_cancel then %>
+  <div style='font-size:16pt;margin-top:20px;margin-bottom:20px;border:5px solid yellow;padding:10px'>
+  <%= image_tag 'info.png' %>
+
+   <%= _("This account was never used and was only bought recently. You can still cancel the account and refund the money spent!") %>
+    <br>
+    <br>
+    ---&gt;
+    <%= link_to _("Cancel Account!"),
+                { :action => 'cancel', :user=>@dp.username }, 
+                :onclick=>"return confirm('#{_("Void Account? Are you sure?")}')"  %>
+  </div>
+<% end %>
+<br>
+<br>
+<h2><%= _("Past Sessions") %></h2>
+<table class='display'>
+<thead>
+<tr>
+ <th><%= _("Start Time") %></th>
+ <th><%= _("Duration") %></th>
+ <th><%= _("Data Uploaded") %></th>
+ <th><%= _("Data Downloaded") %></th>
+</tr>
+</thead>
+<tbody>
+<%
+  @acct.find_all { |e| e['status'] == 'Stop' }.each do |acct|
+    start_event = @acct.find { |e| e['status'] == 'Start' && 
+                                   e['acct_session_id'] == acct['acct_session_id'] }
+%>
+<tr>
+  <td><%= Time.parse(start_event['event_time']).hdatetime rescue 'unknown' %> </td>
+  <td><%= acct['acct_session_time'].to_i.to_timeframe %> </td>
+  <td><%= (acct['acct_output_octets'] || 0).to_i.to_datasize %></td>
+  <td><%= (acct['acct_input_octets'] || 0).to_i.to_datasize %></td>
+</tr>
+
+<% end %>
+
+</tbody>
+</table>
+<br>
+<%= blink_to _("Back"),  :action => 'index' %>
+<% @js << "$('table.display').dataTable(#{data_table_options});" %>
+
+

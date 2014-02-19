@@ -1,0 +1,33 @@
+
+<h1><%= _('Ticket %s') % @ticket.code %></h1>
+
+<table class="display">
+<tr>
+  <td><%=_('Subject:') %></td><td><%= @ticket.subject %></td>
+  <td><%=_('Circuit:') %></td><td><%= @ticket.circuit.name rescue _('not assigned')%></td>
+</tr>
+<tr>
+  <td><%=_('Requestors:') %></td><td><%= @ticket.requestors %></td>
+  <td><%= _('Watchers:') %></td><td><%= @ticket.watchers %></td></tr>
+<tr>
+  <td><%=_('Status:') %></td><td><%= @ticket.status %></td>
+  <td><%=_('Process:') %></td><td><%= @ticket.progress %>%</td>
+</tr>
+<tr>
+  <td><%=_('Priority:') %></td><td><%= @ticket.hpriority %></td>
+  <td><%=_('Assigned to:') %></td><td><%= @ticket.resolver.fullname rescue _('not assigned') %></td>
+</tr>
+</table>
+
+<h2><%= _('Ticket logs:') %></h2>
+<table>
+  <% @ticket.ticket_logs.where(["ctype IN (?)",['CORRESPONDENCE','EDIT']]).where("data_file IS NOT NULL").order('ticket_log.created DESC').all.each do 
+|ticket_log| 
+%>
+    <tr>
+      <td><%= ticket_log.created %></td>
+      <td><%= ticket_log.message %></td>
+    </tr>
+  <% end %>
+
+</table>

@@ -1,0 +1,177 @@
+body {
+  font-size: 8pt;
+  font-family: verdana, helvetica, arial, sans-serif;
+  padding: 0px 0px 0px 0px;
+  margin: 10px 40px 10px 40px;
+  background-color: #ffffff;
+}
+
+body * {
+  font-size: 8pt;
+}
+
+small {
+  font-size: 8pt;
+  color: grey;
+}
+
+body A:link {text-decoration: none; color:blue;}
+body A:visited {text-decoration: none; color:blue;}
+body A:active {text-decoration: none; color:blue;}
+body A:hover {text-decoration: underline overline; color: blue;}
+
+.pagecontent {
+ position:relative;
+ background-color:#ffffff;
+ border: 1px solid #C9D4D0;
+ padding: 5px;
+ z-index: 0;
+}
+
+
+.footer {
+	width:200px;
+	padding-top: 20px;
+	width: 100%;
+	font-size:xx-small;
+	color: gray;
+}
+
+.logoblock {
+
+ background-color: white; 
+}
+
+.vmenu a {
+  border: 1pt solid #7C8381;
+  display: block;
+  font: 8pt;
+  min-width:30pt;
+  height: 30pt;
+}
+
+.vmenu a:hover {
+  background:#E9E9E9;
+  text-decoration: none;
+  border: 1pt solid #8C9391;
+}
+
+div#headline {
+        font-size: 11pt;
+        letter-spacing: 0.3em;
+        font-weight: bold;
+        color: #000055;
+        border-bottom: 1px solid #CCCCCC;
+}
+
+div#headlinesmall {
+        font-size: 9pt;
+        letter-spacing: 0.2em;
+        font-weight: bold;
+        color: #000055;
+        border-bottom: 1px solid #CCCCCC;
+}
+
+
+div.fieldWithErrors input, div.fieldWithErrors select, div.fieldWithErrors textarea {
+  background-color: #FFDDDD;
+  border-color: #FF0000;
+}
+div#error_lable {
+        color: #AA0000;
+}
+
+div#flash_error {
+        padding: 5px 5px 5px 5px;
+        border: 1px solid #222244;
+        font-weight: bold;
+        border: 1px solid #000000;
+        color: #FF0000;
+        font-size: 12px;
+        background-color: #FFDDDD;
+}
+
+.box {
+        border: 1px;
+        border-style: solid;
+        border-color: #000000;
+        background-color: #C8DBFF;
+        padding: 5px 5px 5px 5px;
+        font-size: 8pt;
+}
+
+.box .title {
+        font-size: 8pt;
+        font-stype: bold;
+}
+
+table.ipaddr {
+}
+
+table.ipaddr td {
+ border-style: solid;
+ border-width: 1px;
+ border-color: gray;     
+}
+
+table.ipaddr tr.ipusage {
+  background-color:#CECECE;
+  font-weight:bold;
+  font-size: 8pt;
+}
+table.ipaddr tr.title * {
+ background-color:#EAEAEA;
+ font-size: 12pt;
+ letter-spacing: 1.4pt;
+ font-weight: bold;
+}
+
+table.ipaddr td.info {
+  background-color:#EAEAEA;
+  font-size:8pt;
+  padding-left: 8px;
+  font-weight:bold;
+  font-style: italic;
+}
+
+table.nice th {
+  border-bottom:1px solid black;
+}
+
+table.monitoring {
+  background-color:red;
+}
+
+table.monitoring th {
+  font-size:12pt;
+  font-weight: bold;
+  border-bottom:2px solid black;'
+  margin-bottom: 10px;
+}
+
+table.monitoring td {
+  padding:0 10px 0 10px;
+  border-bottom:1px solid gray;'
+}
+
+
+
+.flash-message {
+  margin: 0 0 0 0.2em;
+  padding-left: 0.2em;
+  background: #FFF2B9;
+  border: 1px dotted #2e8b57;
+  z-index: 10;
+}
+
+.online-help {
+ background-color: #DDDDFF;
+ padding: 5px;
+ border: 2px solid #3333AA;
+ position:absolute;
+ margin-top:70px;
+ min-height:400px;
+ right:10px;
+ width:250px;
+ z-index:1
+}

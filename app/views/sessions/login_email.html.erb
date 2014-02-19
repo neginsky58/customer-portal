@@ -1,0 +1,30 @@
+<br>
+<br>
+<%= blink_to "English", :controller => 'sessions', :action => 'login_email', :locale => 'en',:reseller=>@reseller %>
+<%= blink_to "Português", :controller => 'sessions', :action => 'login_email', :locale => 'pt' ,:reseller=>@reseller%>
+
+<%= headline _("Login to change one Email") %>
+<br>
+<%= image_tag 'info.png' %>
+<%= small _("Login here to change one single email. To manage other emails and your circuits, use %s." % get_portal_name) %>
+<br><br>
+<FORM action="<%= url_for :action=>'login_email' %>" method="POST" name='login_form'>
+<input type="hidden" name="reseller" value="<%= @reseller %>" >
+
+<table>
+  <tbody>
+    <tr>
+      <td><%= _("Your Email Address") %>: </td>
+      <td><INPUT type="text" checked name="email" value="<%= @email %>" size="30" maxlength="120"></td>
+    </tr>
+    <tr>
+      <td><%= _("Password") %>: </td>
+      <td><INPUT type="password" name="passwd" value="" size="30"></td>
+    </tr>
+    <tr><td></td><td><INPUT type="submit" name="login" value=<%= _("Login") %>> </td></tr>
+  </tbody>
+</table>
+
+<br><br><br><br>
+<%= _("Click %s to login to %s." % ["<a href='login?reseller=#{params[:reseller]}'>#{_('here')}</a>", get_portal_name] ).html_safe %>
+

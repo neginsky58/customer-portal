@@ -1,0 +1,14 @@
+
+<%= headline _("Logged out") %>
+
+<p>
+<%= _("Thank's for visiting") %>
+</p>
+
+    <% reseller = ''
+    if @agent
+      reseller = @agent.hid
+    end 
+    %>
+
+<%= blink_to _("Login again"), :action => 'login',:reseller => reseller %>

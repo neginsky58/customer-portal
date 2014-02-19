@@ -1,0 +1,14 @@
+<%= headline _("Edit alias account") %>
+
+<%= error_messages @alias %>
+<% form_for(:alias,@alias,:url=>{:action => 'update', :id => params[:id]}, :html => { :method => :put}) do |f| %>
+
+<%= render :partial => 'form_alias',:locals=>{:f=>f}  %>
+
+<%= f.submit _('Edit') %>
+
+<% end %>
+
+<br/>
+<%= link_to(_("Delete this alias"),{:action => 'destroy', :id => @alias.id},:method=>:delete,:confirm=>_('Are you sure?'),:style => 'background-color:#FF9999;font-weight:bold;')%>
+

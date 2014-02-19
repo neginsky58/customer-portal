@@ -1,0 +1,44 @@
+<%= headline _("Graphs") %>
+
+<%= _("Graphs show you incoming and outgoing traffic from your circuits") %>
+
+<%= headline_small _("Your circuits") %>
+
+raise @circuits.size
+<% if @circuits.size < 10 then %>
+  <ul>
+  <% @circuits.each do |c| %>
+    <LI><%= state_picture(c.active_circuit_state) %>
+        <%= link_to c.nice, :action => 'view', :id => c.id %></LI>
+  <% end %>
+  </ul>
+<% else %>
+  <table class='display'>
+  <thead>
+  <tr>
+  <th><%= _('Site') %></th>
+  <th><%= _('Service') %></th>
+  <th><%= _('Bandwidth') %></th>
+  <th><%= _('Monitoring status') %></th>
+  </tr> 
+  </thead>
+  <tbody>
+    <% @circuits.each do |c| %>
+      <tr><td><%= link_to c.site, :action => 'view', :id => c.id %></td>
+          <td><%= c.service %></td>
+          <td><%= c.nice_bw %></td>
+          <td><%= state_picture(c.active_circuit_state) %></td>
+    <% end %>
+  </tbody>
+  </table>
+  <% @js << "$('table.display').dataTable(#{data_table_options(:iDisplayLength => -1)});" %>
+<% end %>
+
+
+
+<% if @circuits.empty? then %>
+
+<%= _("No circuits have been assigned to you, contact support@maxnet.ao if you feel that this is wrong.") %>
+
+<% end %>
+

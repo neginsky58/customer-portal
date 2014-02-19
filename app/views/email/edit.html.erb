@@ -1,0 +1,32 @@
+<%= headline _("Edit email %s" % @fmail.email_address) %>
+
+
+<%= error_messages @fmail %>
+
+<table width='100%'>
+<tr>
+ <td valign='top'>
+ <%= form_tag :action => @post_to || 'edit' do %>
+   <%= render :partial => 'form_email'  %>
+   <%= submit_tag _('Update') %>
+ <% end %>
+
+ </td>
+ <td valign='top'>
+   <%= headline_small _("Mailbox access") %>
+   <%= render :partial => 'mailbox_access_info' %>
+
+</table>
+<br/><br/>
+
+ <% 
+   if !@no_delete_button then
+     @sure = _("Are you sure?") %>
+     <%= form_tag :action => "delete", :id => @fmail.id do %>
+        <%= submit_tag _('Delete this E-Mail!'), :style => 'background-color:#FF9999;font-weight:bold;', :onclick => "return confirm('#{@sure}')"  %>
+     <% end 
+   end %>
+ </td>
+</tr>
+</table>
+

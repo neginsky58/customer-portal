@@ -1,0 +1,30 @@
+
+<%= headline _("Your alias accounts (%d/%d)" %  [@defined_accounts, @max_accounts])%>
+
+
+<%= alink_to _("Add Alias"), :action => 'new' if @defined_accounts < @max_accounts %>
+<%= small _("Mailboxlimit reached, delete unused aliases if you want to create new ones") if @defined_accounts >= @max_accounts %>
+<br>
+
+<% if @aliases.empty? then %>
+ <p><i><%= _("No Aliases defined") %></i></p>
+<% end %>
+
+<p>
+ <table class='display'>
+  <thead>
+  <tr>
+  <th><%= _('Address') %></th>
+  <th><%= _('Alias To') %></th>
+  </tr> 
+  </thead>
+  <tbody>
+    <% @aliases.sort_by { |c| c.email_address}.each do |email| %>
+      <tr><td><%= link_to email.email_address, :action=>'edit', :id => email.id %></td>
+          <td><%= email.alias_list.shorten(60) %></td>
+    <% end %>
+  </tbody>
+  </table>
+<% @js << "$('table.display').dataTable(#{data_table_options(:iDisplayLength => 50)});" %>
+</p>
+

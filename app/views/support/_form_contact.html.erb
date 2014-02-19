@@ -1,0 +1,40 @@
+
+<table>
+  <tbody>
+    <tr>
+      <td><%= _("Name") %><br><small><%= _("(Firstname/Lastname)") %></small></td>
+      <td><%= text_field 'fcontact', 'firstname' %><%= text_field 'fcontact', 'lastname' %></td>
+    </tr>
+    <tr>
+      <td><%= _("Email Address") %><br/><small><%= _("Work") %></small></td>
+      <td><%= text_field 'fcontact', 'email_work' %></td>
+    </tr>
+    <tr>
+      <td><%= _("Email Address") %><br/><small><%= _("Private") %></small></td>
+      <td><%= text_field 'fcontact', 'email_private' %></td>
+    </tr>    
+    <tr>
+      <td><%= _("Email Address") %><br/><small><%= _("Other") %></small></td>
+      <td><%= text_field 'fcontact', 'email_other' %></td>
+    </tr>
+    <tr>
+      <td><%= _("Phone") %><br/><small><%= _("Mobile") %></small></td>
+      <td><%= text_field 'fcontact', 'tel_mobile_work' %></td>
+    </tr>
+    <tr>
+      <td><%= _("Phone") %><br/><small><%= _("Fixed") %></small></td>
+      <td><%= text_field 'fcontact', 'tel_fixed_work' %></td>
+    </tr>
+
+    <tr>
+      <td valign='top'><%= _("Position") %><br><small>(<%= _("eg. 'technical', 'finance'..") %>)</small></td>
+      <td>
+          <%= text_field 'fcontact', 'work_position', :rows => '10' %></td>
+    </tr>
+
+    <tr>
+      <td valign='top'><%= _("Any notes") %></td>
+      <td><%= text_area 'fcontact', 'note', :rows => '10' %></td>
+    </tr>
+  </tbody>
+</table>

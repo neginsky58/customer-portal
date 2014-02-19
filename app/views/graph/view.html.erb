@@ -1,0 +1,27 @@
+
+<%= headline _("Circuit %s" % @circuit.nice) %>
+
+
+<% 
+def sg(times)
+  return image_tag url_for :action => 'display_graph', :id => @circuit.id, 
+  :params => { 'time' => times }
+end
+%>
+
+<p>
+<b><%= _("Last 24h") %></b><br>
+<%= sg(24) %>
+</p>
+<p>
+<b><%= _("Last Week") %></b><br>
+<%= sg(24*7) %>
+</p>
+<p>
+<b><%= _("Last Month") %></b><br>
+<%= sg(24*7*4) %>
+</p>
+<p> 
+<b><%= _("Last Year") %></b><br>
+<%= sg(12*24*7*4) %>
+</p>

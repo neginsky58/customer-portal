@@ -1,0 +1,69 @@
+# OLD FILE - NOT NEEDED ANYMORE
+
+
+<%= headline("Email %s" % @mail.email_address) %>
+
+<%= flash_message %>
+
+<table>
+  <tbody>
+    <tr>
+      <td><b><%= "Email Address".t %></b></td>
+      <td><%= @mail.email_address %></td>
+    </tr>
+    <tr>
+    <tr>
+      <td><b><%= "Fullname".t %></b></td>
+      <td><%= @mail.fullname.nil? ? "(not available)".t : @mail.fullname %></td>
+    </tr>
+    <tr>
+
+      <td><b><%= "Mails in INBOX".t %></b></td>
+      <td><%= @inbox %></td>
+    </tr>
+    <tr>
+      <td><b><%= "Antispam".t %></b></TD>
+      <td><%= MyMail.sa_level_name @mail.sa_level %></td>
+    </tr>
+    <tr><TD><b><%= "Antivirus".t %></b></TD>
+         <TD><%= @mail.antivirus_enable != 0 ? 'on'.t : "off".t %>
+         </TD>
+    </tr>
+    
+    <tr>
+      <TD><b><%= "Forward".t %></b></TD>
+      <td><%= @mail.forward_enable == 1 ? @mail.forward_to : "not active".t %></td>
+    </tr>
+  </tbody>
+</table>
+
+<%= blink_to "Edit".t, { :action => 'edit', :id => @mail.id } %>
+<%= blink_to "Delete".t, { :action => 'delete', :id => @mail.id } %>
+<br><br>
+<%= headline_small "Mailbox access".t %>
+<table cellspacing='4px'>
+  <tbody>
+    <tr>
+      <td><%= "POP3 Server".t %><br><%="(incoming mail server)".t %></td>
+      <td><tt style='font-size: 11pt;'><%= SITE_CONFIG[:pop3_server] %></tt></td>
+    </tr>
+    <tr>
+      <td><%= "SMTP Server".t %><br> <%= "(outgoing mail server)".t %></td>
+      <td><tt style='font-size: 11pt;'><%= SITE_CONFIG[:smtp_server] %></tt><br><small style="color:gray;">Please enable SMTP authentication!</small></td>
+    </tr>
+    <tr>
+      <td><%= "IMAP Server".t %></td>
+      <td><tt style='font-size: 11pt;'><%= SITE_CONFIG[:smtp_server] %></tt></td>
+    </tr>
+    <tr>
+      <td><br></td>
+      <td></td>
+    </tr>
+
+     <tr>
+      <td><%= "Webmail".t %></td>
+      <td><tt style='font-size: 11pt;'><%= link_to SITE_CONFIG[:webmail_server] %> , <%= SITE_CONFIG[:webmail_server] %> %></tt></td>
+    </tr>
+
+  </tbody>
+</table>

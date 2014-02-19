@@ -1,0 +1,83 @@
+
+<% if @fmail.new_record? then 
+     @fmail.sa_level = 1 
+   end 
+%>
+<%= hidden_field_tag('id',@fmail.id) unless @fmail.new_record? %>
+<table>
+<TR>
+<% if @fmail.new_record? %>
+  <TD><%= _("Email address") + ":" %></TD>
+  <TD><%= text_field 'fmail', 'email_username', :size=>16 %><b style='font-size:12pt'>@</b><%= select 'fmail', 'email_domain',@session[:user].customer.domains.collect { |d| [d.domain_name, d.domain_name ] } %>
+ </TD>
+<% else %>
+  <TD><%= _("Email address") %>:</TD><TD><b><%= @fmail.email_address %></b>
+  </TD>
+<% end %>
+</TR>
+<tr>
+<TD><%= _("Full name") %>:</TD>
+<td><%= text_field 'fmail', 'fullname' %><br>
+<%= small @admin_options ? _("The name of the person who is using it (optional)") : _("Your full name") %></td>
+</tr>
+
+<tr>
+<TD><br></TD>
+<td></td>
+</tr>
+
+
+<tr>
+<TD><%= _("Password") %>:</TD>
+<td><%= password_field 'fmail', 'password' %></td>
+</tr>
+<tr>
+<TD><%= _("Confirm password") %>:</TD>
+<td><%= password_field 'fmail', 'password_confirmation' %><br>
+<%= small _("Leave password fields empty to keep the current one.") if !@fmail.new_record? %>
+</td>
+</tr>
+<tr><TD><br></TD></tr>
+
+<% if @admin_options then %>
+
+<TR>
+<TD><%= _("Max message size") %>:</TD><TD><%= text_field 'fmail', 'max_msgsize', {:size => 5, :maxlength => 5 } %> KBytes</TD>
+</TR>
+
+<% end %>
+<TR>
+<TD><%= _("Antispam Level") %>:</TD><TD>
+ <%= radio_button 'fmail', "sa_level", "0" %> <%= MyMail.sa_level_name 0 %>
+ <%= radio_button 'fmail', "sa_level", "1" %> <%= MyMail.sa_level_name 1 %>
+ <%= radio_button 'fmail', "sa_level", "2" %> <%= MyMail.sa_level_name 2 %>
+ <%= radio_button "fmail", 'sa_level', "3" %> <%= MyMail.sa_level_name 3 %>
+</TD>
+</TR>
+
+<% if @admin_options then %>
+
+<TR>
+<TD><%= _("Antivirus enable") %>:</TD><TD><%= check_box 'fmail', 'antivirus_enable' %></TD>
+</TR>
+
+<% end %>
+
+<tr><TD><br></TD></tr>
+<tr><td colspan=2><%= headline_small _("Email Forwarding") %></td></tr>
+<tr><td colspan=2><small style="color:gray;"><%= _("If a forward is enabled the server will send a copy of each received message to the email addresses specified below.") %></small></td></tr>
+<TR>
+<TD><%= _("Forward enable") %>:</TD><TD><%= check_box 'fmail', 'forward_enable' %>
+ </TD>
+</TR>
+<TR>
+<TD><%= _("Forward to") %>:</TD>
+  <TD> <%= text_field 'fmail', 'forward_to' %><br><small style="color:gray;"><%= _("You can enter more emails seperated by a comma (,)") %></small></TD>
+</TR>
+<% if @features[:email_autoreply] then %>
+<tr><td colspan=2><%= headline_small _("Auto reply / Vacation Message") %></td></tr>
+<tr><td colspan=2><small style="color:gray;"><%= _("Autoreply will automatically answer every incoming mail with the text below.") %></small></td></tr>
+<tr><td><%= _("Auto Reply enable") %></td<td> <%= check_box 'fmail', 'autoreply_enable' %></td></tr>
+<tr><td colspan=2><b>Text</b><br><%= text_area 'fmail', 'autoreply_text', :cols => 85, :rows=>8 %></td></tr>
+<% end %>
+</table>

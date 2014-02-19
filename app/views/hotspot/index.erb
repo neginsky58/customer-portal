@@ -1,0 +1,66 @@
+<%= headline _("Hotspot") %>
+
+<% if @buy_link %>
+<div style='margin-bottom:100px'>
+<span style='font-size:16pt;float:left'>
+<%= link_to _("Buy New"), {:action => 'buy'}, :class => 'getInTouch' if @buy_link %>
+</span>
+<span style='float:right;font-size:13pt'>
+ <%= _("Account Balance:") %><%= nice_balance(@account.balance) %>
+ <br><small>[<%= link_to _("See details"), :action => 'account' %>]</small>
+</span>
+</div>
+<% end %>
+
+<h3><%= _("Current users") %></h3>
+
+
+<div id="searchbox" class='boxx'>
+  <form name="sform" action="" style="display:inline;">
+    <label for="item_name"><%=_('Search:')%></label>
+    <%= text_field_tag("query", params['query'], :size => 10 ) %>
+ 		<% if more_search = yield(:more_search) and not more_search.empty? %>
+      <%= more_search %>
+    <% else %>
+      <% if @sane_params %>
+        <% @sane_params.each do |k,v| %>
+          <%= hidden_field_tag(k.to_s,v.to_s) %>
+        <% end %>
+      <% end %>
+    <% end %>
+  </form>
+  <%= image_tag("spinner.gif",
+                :align => "absmiddle",
+                :border => 0,
+                :id => "spinner",
+                :style =>"display: none;" ) %>
+</div>
+<br/>
+
+<div class="pagination">
+	<%= paginating_links @dial_profiles, :params => params if @dial_profiles %>
+</div>
+
+<table class='nice' width="100%">
+<thead>
+<tr>
+   <th><%= sort_link_helper _("Username"),'dial_profiles.username' %></th>
+   <th><%= _("Password") %> </th>
+   <th><%= sort_link_helper _("Created"),'dial_profiles.created' %></th>
+   <th><%= sort_link_helper _("Credit"),'calculatedcredit' %></th><th><%= sort_link_helper _("Status"),'radius_online.acct_session_id' %></th></tr>
+</thead>
+<tbody>
+<% @dial_profiles.each do |dp| %>
+  <tr>
+    <td><%= link_to dp.username, :action => 'view', :user => dp.username %></td>
+    <td><%= dp.password %></td>
+    <td><%= dp.created.hdatetime %></td>
+    <td><%= dp.hcredit %></td>
+    <td><%= dp.online? ? "<b style='color:green'>ONLINE</b>".html_safe : "<span style='color:gray'>OFFLINE</b>".html_safe %></td>
+  </tr>
+<% end %>
+</tbody>
+</table>
+
+<% @js << "$('table.display').dataTable();" %>
+

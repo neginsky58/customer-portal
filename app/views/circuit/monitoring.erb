@@ -1,0 +1,45 @@
+<%= headline _("Circuit %s - Uptime History") % @circuit.nice %>
+
+<% if !@ping_monitor then %>
+  <div class='info'>
+    <b><%= _("Our monitoring system was unable to ping your CPE.") %></b>
+    <br>
+    <%= _("The information below is based on the ARP cache on our access router and is inaccurate.") %>
+    <br>
+    <%= _("It can still give you a reasonable indication on your circuit state. Please allow ICMP ping for accurate monitoring") %>
+  </div>
+<% end %>
+
+
+
+<table class='monitoring'>
+ <tr><th><%= _("Time") %></th>
+     <th><%= _("State") %></th>
+     <th><%= _("Duration") %></th>
+
+ </tr>
+ 
+ <% @states.each do |event| 
+      color = event.state == 'D' ? 'red' : 'green'
+#      mon   = %w{ ping mac}.include?(event.monitor) ? event.monitor : ''
+ %>
+    <tr><td><%= event.start.hdatetime %></td>
+        <td style='color:<%=color%>;font-weight:bold;text-align:center'><%= event.hstate %></td>
+        <td> <%= 
+            if event.stop then 
+              (event.stop - event.start).to_timeframe
+            else
+              _("Since")+ ": "+ (Time.now - event.start).to_timeframe
+            end 
+            %>
+        </td>
+    </tr>
+ <% end %>
+ 
+</table>
+
+<hr>
+<b><%=_("Monitored by")%></b><br>
+<%= @ping_monitor ? _('ICMP Ping') : _('CPE MAC Address on access router ARP cache - inaccurate, please allow PING') %>
+
+

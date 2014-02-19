@@ -1,0 +1,38 @@
+<table cellspacing='4px'>
+  <tbody>
+    <tr>
+      <td><%= _("POP3 Server") %><br><%=_("(incoming mail server)") %></td>
+      <td><tt style='font-size: 11pt;'><%= SITE_CONFIG[:pop3_server] %></tt></td>
+    </tr>
+    <tr>
+      <td><%= _("SMTP Server") %><br> <%= _("(outgoing mail server)") %></td>
+      <td><tt style='font-size: 11pt;'><%= SITE_CONFIG[:smtp_server] %></tt><br>
+           <small style="color:gray;"><%= _("Please enable SMTP authentication!") %></small></td>
+    </tr>
+    <tr>
+      <td><%= _("IMAP Server") %></td>
+      <td><tt style='font-size: 11pt;'><%= SITE_CONFIG[:smtp_server] %></tt></td>
+    </tr>
+    <tr>
+      <td><br></td>
+      <td></td>
+    </tr>
+
+     <tr>
+      <td><%= _("Webmail") %></td>
+      <td><tt style='font-size: 11pt;'><%= link_to SITE_CONFIG[:webmail_server] , 
+                                        SITE_CONFIG[:webmail_server] %></tt></td>
+    </tr>
+
+    <% if @inbox then %>
+    <tr>
+      <td><br></td>
+    </tr>
+    <tr>
+      <td><b><%= _("Mail in INBOX") %></b></td>
+      <td><span style='font-size:12pt'><%= @inbox %></span></td>
+    </tr>
+    <% end %>
+
+  </tbody>
+</table>

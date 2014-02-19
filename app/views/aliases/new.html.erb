@@ -1,0 +1,8 @@
+<%= headline _("Add alias account") %>
+
+<%= error_messages @alias %>
+<% form_for(:alias,@alias, :url => { :action => 'create'}) do |f| %>
+   <%= render :partial => 'form_alias', :locals => {:f => f} %>
+<%= f.submit _('Add') %>
+
+<% end %>

@@ -1,0 +1,48 @@
+<div style='width:370px;float:left;position:relative'>
+ <%= headline _("%s Customer Support Center") % get_company_name %>
+
+ <%= small _("The %s support team is happy to assist you with technical requests. For this we maintain a contact database for you or your company.") % [get_company_name] %>
+
+
+<%= headline_small _("Technical support") %><br>
+
+<% if @session[:user].customer.contacts.empty? %>
+ <%= small _("Please take one minute to fill out your contact details before we can open a support request.") %><br>
+ <%= alink_to _("Add Contact"), :action => 'contact_add' %>
+<% else %>
+ <%= alink_to _("Request form"), new_ticket_path %>&nbsp;&nbsp;&nbsp;&nbsp;
+ <%= alink_to _("View requests"), tickets_path %><br/>
+<% end %>
+<br>
+
+<%= raw(
+          @session[:user].customer.agent.public_contact_html.to_s.strip.empty? ?
+               SITE_CONFIG[:contact_full_html].html_safe :
+               @session[:user].customer.agent.public_contact_html 
+       )
+%>
+
+</div>
+<div style='float:top;margin-left:380px;padding-left:19px;border-left:1px solid gray;'>
+<%= headline_small _("Contacts") %>
+
+<%= small _("These are your contacts we currently have in our database. You can add or modify entries if you feel they are wrong. We will use these to contact you on service related events.") %>
+<br>
+<%= alink_to _("Add new contact"), :action => 'contact_add' %>
+
+<p>
+<ul>
+<% @contacts.each do |c| %>
+ <li>
+ <%= render :partial => 'show_contact_item', :object => c %>
+ <br>
+ </li>
+<% end %>
+</p>
+</ul>
+
+<%= _("(No Contacts defined)") if @session[:user].customer.contacts.empty? %>
+<br>
+
+</div>
+

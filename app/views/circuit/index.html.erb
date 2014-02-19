@@ -1,0 +1,39 @@
+<%= headline _("Circuits") %>
+
+
+
+  <table class='display'>
+  <thead>
+  <tr>
+  <th><%= _('Site') %></th>
+  <th><%= _('Service') %></th>
+  <th><%= _('Bandwidth') %></th>
+  <th><%= _('Monitoring status') %></th>
+  </tr> 
+  </thead>
+  <tbody>
+    <% @circuits.sort_by { |c| c.site}.each do |c| %>
+      <tr><td><%= link_to c.site, :controller => 'circuit', :action => 'graph', :circuit => c.site %>
+ <% if c.payg_enable and  @session[:user].permission_to?('c,circuit_show_payg_status,r') %>
+    &nbsp;    &nbsp;    &nbsp;
+    <%= link_to(_('View PayG-Status'),payg_circuit_index_path(:circuit=>c.site))%>
+<%end %>
+
+
+</td>
+          <td><%= c.service %></td>
+          <td><%= c.nice_bw %></td>
+          <td align='center'><%= state_picture(c.active_circuit_state) %></td>
+    <% end %>
+  </tbody>
+  </table>
+  
+  <% @js << "$('table.display').dataTable(#{data_table_options(:iDisplayLength => -1)});" if @circuits.size > 10 %>
+
+
+<% if @circuits.empty? then %>
+
+<%= _("No circuits have been assigned to you, contact %s if you feel that this is wrong.") % get_company_name %>
+
+<% end %>
+

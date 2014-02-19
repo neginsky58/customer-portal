@@ -1,0 +1,22 @@
+<% if @announcements and @announcements.size > 0 %>
+<p>
+ <h2><%= _("Latest announcements") %></h2>
+ <% @announcements.each do |announcement| %>
+  <p>
+  <b><%= h announcement.subject %></b>
+  
+  <br/>
+  <%= h(announcement.message).gsub("\n",'<br/>') %>
+  </p>
+
+
+  <%= form_tag( customer_announcement_url(announcement),:method=>'delete')%>
+    <input value="OK" style="background-color: green; font-weight: bold;" name="submit_delete" onclick="" type="submit">
+  </form>
+
+  
+  <hr/>
+ <% end %>
+</p>
+<%end%>
+

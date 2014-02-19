@@ -1,0 +1,20 @@
+<%= headline _("Change contact") %>
+
+<%= error_messages @fcontact %>
+
+
+<%= form_tag :action => 'contact_edit' do %>
+
+<%= render :partial => 'form_contact' %>
+
+<%= submit_tag _("Save") %>
+<% end  %>
+
+<p>
+ <% @sure = _("Are you sure?") %>
+ <%= form_tag :action => "contact_delete", :id => @fcontact.id do %>
+    <%= submit_tag _('Delete this Contact!'), :style => 'background-color:#FF9999;font-weight:bold;', :onclick => "return confirm('#{@sure}')"  %>
+ <% end %>
+
+</p>
+

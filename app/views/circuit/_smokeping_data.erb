@@ -1,0 +1,15 @@
+ <% if @smokeping_error then %>
+     <h3> <%= _("Unable to generate Graph") %> </h3>
+     <br>
+     <%= @smokeping_error %>
+     <br>
+     <br>
+     <%= _("Please contact our helpdesk if you feel this is wrong.") %>
+     <br>
+     <br>
+     <%= _("Email")%>: <a href='mailto:<%= SITE_CONFIG[:support_email] %>'><%= SITE_CONFIG[:support_email] %></a>
+ <% else %>
+    <% smoke_url  = "data:image/png;base64,#{Base64.encode64(@smokeping_image)}" %>
+    <img src='<%=smoke_url%>'>
+ <% end %>
+

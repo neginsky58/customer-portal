@@ -1,0 +1,12 @@
+<%= headline _("Buy Hotspot Internet") %>
+<i><%= link_to(_("buy a batch of credentials"),buy_batch_hotspot_index_path) %></i><br/><br/>
+
+<%= error_messages @errors if @errors %>
+
+<%= form_tag :action => 'buy' do %>
+ <%= render :partial => 'form_buy'  %>
+<% end %>
+<br>
+
+<%= blink_to _("Back"),  :action => 'index' %>
+

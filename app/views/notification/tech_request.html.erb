@@ -1,0 +1,15 @@
+Support request from my.maxnet.ao:
+
+Requested by: <%= @params[:requestor] %>
+Date:         <%= Time.now %>
+Subject:      <%= @params[:subject] %>
+
+Customer:     <%= @params[:customer].hid %> <%= @params[:customer].name %>
+Site:         <%= @params[:site] %>
+Type:         <%= @params[:type] %>
+Contact:      <%= @params[:contact].firstname %> <%= @params[:contact].lastname %>
+
+-------------
+<%= @params[:request] %>
+-------------
+

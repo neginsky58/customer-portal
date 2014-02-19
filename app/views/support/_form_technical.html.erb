@@ -1,0 +1,54 @@
+
+
+<table>
+  <tbody>
+    <tr>
+      <td><%= _("Subject") %>:</td>
+      <td><%= text_field_tag 'subject', params[:subject], :size => 40 %></td>
+    </tr>
+    <tr>
+      <td><%= _('Site')  %>:</td>
+      <td><%= 
+             select_tag 'site', 
+             options_for_select(
+                [[_('(n/a)'), 'n/a']] +
+                 @session[:user].customer.circuits.collect { |c| 
+                    [c.site, c.site ]  }, params[:circuit])
+  
+            # options_for_select([['n/a','n/a']].push(@session[:user].customer.circuits.collect { |c| [c.ifalias, c.ifalias ] }), params[:circuit])
+            
+           %>
+      </td>
+    </tr>
+    <tr>
+     <TD><%= _("Type of problem") %></TD>
+     <td><%= select_tag 'type',
+            options_for_select(
+                [[_('Other'), 'other'],
+                 [_('Network down'), 'network down'],
+                 [_('Network performance'), 'network performance'],
+                 [_('Request technical assistance'), 'technical assistance']
+                 ], params[:type]) %> </td>
+    </tr>
+     <TD><%= _('Contact') %>:<br><%= small _("Your contact") %></TD>
+     <% contacts = []
+        @session[:user].customer.contacts.each do |c|
+           [c.email_work, c.email_private, c.email_other].each do |email|
+              next if email.nil?
+              next if email.empty?
+              contacts << ["#{c.firstname} #{c.lastname} <#{email}>", "#{email},#{c.id}"]
+           end
+        end
+     %>
+     <td><%= select_tag 'contact',
+            options_for_select(contacts, params[:contact]) %> </td>
+    </tr>
+
+  </tbody>
+</table>
+
+<%= _('Please describe your request/problem as detailed as possible') %>:<br>
+<%= text_area_tag 'request', params[:request], { :cols => 60, :rows => 15}  %>
+
+<br>
+<%= submit_tag _('Send') %>

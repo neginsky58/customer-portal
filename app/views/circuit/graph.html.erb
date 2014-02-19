@@ -1,0 +1,24 @@
+<%= headline _("Circuit %s - Bandwidth Utilization") % @circuit.nice %>
+
+<% 
+def sg(times)
+  image_tag url_for :controller => 'circuit', :action => 'display_graph', :circuit => @circuit.site, :time => times.to_s
+end
+%>
+
+<p>
+<b><%= _("Last 24h") %></b><br>
+<%= sg(24) %>
+</p>
+<p>
+<b><%= _("Last Week") %></b><br>
+<%= sg(24*7) %>
+</p>
+<p>
+<b><%= _("Last Month") %></b><br>
+<%= sg(24*7*4) %>
+</p>
+<p> 
+<b><%= _("Last Year") %></b><br>
+<%= sg(12*24*7*4) %>
+</p>

@@ -1,0 +1,6 @@
+<% c = show_contact_item %>
+
+<%= link_to  "%s %s" % [h(c.firstname), h(c.lastname)], {:action => 'contact_edit', :id=> c.id} %><br>
+<%= small h(c.email_work)  %>
+<%= small " / " + h(c.tel_mobile_work) if c.tel_mobile_work.length > 2 %>
+<%= small " / " + h(c.tel_fixed_work) if c.tel_fixed_work.length > 2 %>

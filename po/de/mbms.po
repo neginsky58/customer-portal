@@ -1,0 +1,1503 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.00\n"
+"POT-Creation-Date: 2012-11-27 14:02+0100\n"
+"PO-Revision-Date: 2011-08-08 09:29+0100\n"
+"Last-Translator: Martin Boese <martin@sat-space.net>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: app/controllers/application_controller.rb:57
+#: app/controllers/application_controller.rb:59
+msgid "My"
+msgstr ""
+
+#: app/controllers/email_controller.rb:46
+#: app/views_satspace/sessions/_menu.html.erb:33
+#: app/views/sessions/_menu.html.erb:33 app/views/circuit/smokeping.erb:36
+#: app/views/circuit/_smokeping_data.erb:10
+msgid "Email"
+msgstr "Email"
+
+#: app/controllers/email_controller.rb:75
+#: app/controllers/email_controller.rb:82
+msgid "Not available"
+msgstr "Nicht verfügbar"
+
+#: app/controllers/email_controller.rb:101
+msgid "Email %s deleted!"
+msgstr "Email %s gelöscht!"
+
+#: app/controllers/email_controller.rb:107
+msgid "Delete"
+msgstr "Löschen"
+
+#: app/controllers/email_controller.rb:110
+msgid "Delete %s"
+msgstr "Lösche %s"
+
+#: app/controllers/email_controller.rb:121
+msgid "Email %s"
+msgstr "Email %s"
+
+#: app/controllers/email_controller.rb:131
+#: app/controllers/aliases_controller.rb:56
+msgid "Your email accounts"
+msgstr "Ihre email Konto"
+
+#: app/controllers/email_controller.rb:141 app/views/email/add.html.erb:1
+msgid "Add email account"
+msgstr "Email zufügen"
+
+#: app/controllers/email_controller.rb:142
+#: app/controllers/aliases_controller.rb:70
+#: app/controllers/aliases_controller.rb:77
+#: app/controllers/support_controller.rb:33 app/views/email/add.html.erb:9
+#: app/views/aliases/new.html.erb:6
+msgid "Add"
+msgstr "Zufügen"
+
+#: app/controllers/email_controller.rb:154
+msgid "New Email account %s saved!"
+msgstr "Neue Email %s gespeichert!"
+
+#: app/controllers/email_controller.rb:163
+msgid "Your email %s"
+msgstr "Ihre Email %s"
+
+#: app/controllers/email_controller.rb:190
+#: app/controllers/email_controller.rb:229
+msgid "Email updated"
+msgstr "Email aktualisiert"
+
+#: app/controllers/email_controller.rb:192
+msgid "Nothing changed"
+msgstr "Nichts geändert"
+
+#: app/controllers/email_controller.rb:212
+#: app/controllers/aliases_controller.rb:98
+#: app/controllers/aliases_controller.rb:103 app/views/aliases/edit.html.erb:8
+msgid "Edit"
+msgstr "Ändern"
+
+#: app/controllers/email_controller.rb:215 app/views/email/edit.html.erb:1
+msgid "Edit email %s"
+msgstr "Email %s ändern"
+
+#: app/controllers/email_controller.rb:244
+msgid "Your email settings"
+msgstr "Ihre Email Einstellungen"
+
+#: app/controllers/email_controller.rb:245
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: app/controllers/sessions_controller.rb:12
+#: app/views_satspace/sessions/_menu.html.erb:18
+msgid "Session"
+msgstr "Sitzung"
+
+#: app/controllers/sessions_controller.rb:14
+#: app/controllers/sessions_controller.rb:118
+msgid "User '%s'"
+msgstr "Benutzer '%s'"
+
+#: app/controllers/sessions_controller.rb:24
+msgid "%s Login"
+msgstr "%s Login"
+
+#: app/controllers/sessions_controller.rb:26 app/views/sessions/login.html.erb:32
+#: app/views/sessions/login_email.html.erb:24
+msgid "Login"
+msgstr "Anmelden"
+
+#: app/controllers/sessions_controller.rb:33
+#: app/controllers/sessions_controller.rb:62
+msgid "Wrong username or password"
+msgstr "Benuzername oder Passwort inkorrekt"
+
+#: app/controllers/sessions_controller.rb:39
+msgid "Customer logins only"
+msgstr "Nur Kunden logins"
+
+#: app/controllers/sessions_controller.rb:55
+msgid "Email Login"
+msgstr "Email Anmeldung"
+
+#: app/controllers/sessions_controller.rb:80 app/views/sessions/logout.html.erb:2
+msgid "Logged out"
+msgstr "Angemeldet"
+
+#: app/controllers/sessions_controller.rb:88
+#: app/controllers/sessions_controller.rb:89 app/views/sessions/index.html.erb:5
+msgid "Change password"
+msgstr "Passwort ändern"
+
+#: app/controllers/sessions_controller.rb:98
+msgid "Password saved! Use new password on next login!"
+msgstr ""
+"Passwort gespeichert! Neues Passwort bei der nächsten Anmeldung verwenden."
+
+#: app/controllers/sessions_controller.rb:117
+msgid "Welcome"
+msgstr "Willkommen"
+
+#: app/controllers/aliases_controller.rb:35
+msgid "Aliases"
+msgstr "Alias"
+
+#: app/controllers/aliases_controller.rb:69 app/views/aliases/new.html.erb:1
+msgid "Add alias account"
+msgstr "Ein Alias Konto zufügen"
+
+#: app/controllers/aliases_controller.rb:89
+#: app/controllers/aliases_controller.rb:109
+msgid "New Alias account %s saved!"
+msgstr "Neues Alias Konto %s gespeichert!"
+
+#: app/controllers/aliases_controller.rb:119
+msgid "Alias has been removed"
+msgstr "Alias wurde entfernt"
+
+#: app/controllers/hotspot_controller.rb:14
+#: app/controllers/hotspot_controller.rb:19
+#: app/views_satspace/sessions/_menu.html.erb:40
+#: app/views/sessions/_menu.html.erb:40 app/views/hotspot/index.erb:1
+msgid "Hotspot"
+msgstr "Hotspot"
+
+#: app/controllers/hotspot_controller.rb:44
+msgid "View Hotspot Account"
+msgstr "Hotspot Konto anzeigen"
+
+#: app/controllers/hotspot_controller.rb:68
+msgid "Account '%s' cancelled"
+msgstr "Konto '%s' suspendiert"
+
+#: app/controllers/hotspot_controller.rb:74
+msgid "Account statement"
+msgstr "Kontoauszug"
+
+#: app/controllers/hotspot_controller.rb:97
+#: app/controllers/hotspot_controller.rb:147
+msgid "You don't have enough credit for this transaction. "
+msgstr ""
+
+#: app/controllers/hotspot_controller.rb:110 app/views/hotspot/buy.erb:1
+msgid "Buy Hotspot Internet"
+msgstr "Hotspot Internet kaufen"
+
+#: app/controllers/hotspot_controller.rb:138
+msgid "I need to know how many passwords you want. "
+msgstr ""
+
+#: app/controllers/hotspot_controller.rb:139
+msgid "I can only create maximal 20 passwords at once. "
+msgstr ""
+
+#: app/controllers/hotspot_controller.rb:162 app/views/hotspot/buy_batch.erb:1
+#, fuzzy
+msgid "Buy Hotspot Internet (Batch-Mode)"
+msgstr "Hotspot Internet kaufen"
+
+#: app/controllers/circuit_controller.rb:27
+#: app/views_satspace/sessions/_menu.html.erb:37 app/views/circuit/index.html.erb:1
+#: app/views/sessions/_menu.html.erb:37
+msgid "Circuits"
+msgstr "Verbindungen"
+
+#: app/controllers/circuit_controller.rb:36
+msgid "Utilization"
+msgstr "Verbrauch"
+
+#: app/controllers/circuit_controller.rb:37
+msgid "Latencies/Loss"
+msgstr ""
+
+#: app/controllers/circuit_controller.rb:38
+#: app/controllers/circuit_controller.rb:112
+#, fuzzy
+msgid "Monitoring"
+msgstr "Monitoring Status"
+
+#: app/controllers/circuit_controller.rb:39
+msgid "Configuration"
+msgstr "Konfiguration"
+
+#: app/controllers/circuit_controller.rb:72 app/views/graph/index.html.erb:1
+msgid "Graphs"
+msgstr "Grafiken"
+
+#: app/controllers/circuit_controller.rb:113
+#, fuzzy
+msgid "Monitoring history for %s"
+msgstr "Monitoring Status"
+
+#: app/controllers/circuit_controller.rb:148
+msgid "Latencies/Loss Graph"
+msgstr ""
+
+#: app/controllers/circuit_controller.rb:149
+msgid "Latencies/Loss Graph for %s"
+msgstr ""
+
+#: app/controllers/circuit_controller.rb:152
+msgid "Latencies/Loss graph is not enabled on this circuit"
+msgstr ""
+
+#: app/controllers/circuit_controller.rb:163
+#: app/controllers/circuit_controller.rb:164
+msgid "Devices"
+msgstr "Geräte"
+
+#: app/controllers/circuit_controller.rb:168
+#: app/controllers/circuit_controller.rb:169
+msgid "IP configuration"
+msgstr "IP Konfiguration"
+
+#: app/controllers/circuit_controller.rb:174
+msgid "Graph"
+msgstr "Grafik"
+
+#: app/controllers/circuit_controller.rb:175
+msgid "Bandwidth Utilization for %s"
+msgstr "Bandbreite Verbrauch für %s"
+
+#: app/controllers/support_controller.rb:27
+#: app/views_satspace/sessions/_menu.html.erb:45
+#: app/views/email/invalid_setup.html.erb:6 app/views/sessions/_menu.html.erb:45
+#: app/views/aliases/invalid_setup.html.erb:6
+msgid "Support"
+msgstr "Support"
+
+#: app/controllers/support_controller.rb:31
+#: app/views/support/contact_add.html.erb:1
+msgid "Add a new contact"
+msgstr "Neuen Kontakt zufügen"
+
+#: app/controllers/support_controller.rb:32
+#: app/controllers/support_controller.rb:54 app/views/support/index.html.erb:20
+#: app/views/support/contact_list.html.erb:1
+msgid "Contacts"
+msgstr "Kontakte"
+
+#: app/controllers/support_controller.rb:46
+msgid "Contact saved!"
+msgstr "Kontakt gespeichert!"
+
+#: app/controllers/support_controller.rb:53
+msgid "Edit contact"
+msgstr "Kontakt ändern"
+
+#: app/controllers/support_controller.rb:67
+msgid "Contact updated"
+msgstr "Kontakt erneuert"
+
+#: app/controllers/support_controller.rb:83
+msgid "Contact Deleted"
+msgstr "Kontakt gelöscht"
+
+#: app/controllers/support_controller.rb:91
+msgid "%s Customer Support"
+msgstr "%s Kundensupport"
+
+#: app/controllers/support_controller.rb:97
+msgid "New technical request"
+msgstr "Neue technische Anfrage"
+
+#: app/controllers/support_controller.rb:98
+msgid "Technical Support"
+msgstr "Technischer Support"
+
+#: app/controllers/support_controller.rb:103
+msgid "Specify a subject"
+msgstr "Betreff angeben"
+
+#: app/controllers/support_controller.rb:106
+msgid "Type a details request"
+msgstr "Geben Sie eine detaillierte Anfrage ein"
+
+#: app/controllers/support_controller.rb:136
+msgid "Sales/Commercial contact"
+msgstr "Vertriebskontakt"
+
+#: app/models/ip_network.rb:60
+msgid "Your network"
+msgstr "Ihr Netzwerk"
+
+#: app/models/ip_network.rb:66 app/models/ip_network.rb:71
+#: app/models/ip_network.rb:76 app/models/ip_network.rb:77
+msgid "Your address"
+msgstr "Ihre Adresse"
+
+#: app/models/ip_network.rb:72 app/models/ip_network.rb:85
+msgid "Gateway"
+msgstr "Gateway"
+
+#: app/models/ip_network.rb:83 app/models/ip_network.rb:86
+msgid "Your first IP"
+msgstr "Ihre erste IP"
+
+#: app/models/ip_network.rb:88
+msgid "Your last IP"
+msgstr "Ihre letzte IP"
+
+#: app/models/ip_network.rb:89
+msgid "Broadcast address"
+msgstr "Broadcast Adresse"
+
+#: app/models/ip_network.rb:101
+msgid "Hosts/Net: %s"
+msgstr "Hosts/Net: %s"
+
+#: app/models/ip_network.rb:105
+msgid "Static route with gateway: %s"
+msgstr "Statische Route mit Gateway: %s"
+
+#: app/models/alias.rb:5 app/models/my_mail.rb:7
+msgid "Enter 2 to 48 characters"
+msgstr "2 bis 48 Zeichen eingeben"
+
+#: app/models/alias.rb:6 app/models/my_mail.rb:8
+msgid "Invalid format or characters"
+msgstr "Ungültiges Format oder Zeichen"
+
+#: app/models/alias.rb:18
+msgid "%s - Already existing Alias"
+msgstr "%s - Gibt es bereits"
+
+#: app/models/alias.rb:21
+msgid "%s - Already existing Email"
+msgstr "%s - gibt es schon als Email"
+
+#: app/models/alias.rb:29
+msgid "Bad format"
+msgstr "Falsches Format"
+
+#: app/models/notification.rb:3
+msgid "New email is ready"
+msgstr "Neue email steht bereit"
+
+#: app/models/user.rb:25
+msgid "Does not match confirmation."
+msgstr "Entspricht nicht der konfirmation"
+
+#: app/models/user.rb:29
+msgid "Invalid characters"
+msgstr "Ungültige Zeichen"
+
+#: app/models/my_mail.rb:4
+msgid "Only numbers allowed here"
+msgstr "Nur Nummern sind erlaubt"
+
+#: app/models/my_mail.rb:5
+msgid "Passwords do not match"
+msgstr "Passwörter sind nicht identisch"
+
+#: app/models/my_mail.rb:45
+msgid "off"
+msgstr "aus"
+
+#: app/models/my_mail.rb:46
+msgid "low"
+msgstr "wenig"
+
+#: app/models/my_mail.rb:47
+msgid "medium"
+msgstr "mittle"
+
+#: app/models/my_mail.rb:48
+msgid "high"
+msgstr "hoch"
+
+#: app/models/my_mail.rb:49
+msgid "unknown"
+msgstr "unbekannt"
+
+#: app/models/my_mail.rb:64
+msgid "Invalid format: >%s<"
+msgstr "Falsches Format >%s<"
+
+#: app/models/my_mail.rb:69
+msgid "Where to forward?"
+msgstr "Wohin weiterleiten?"
+
+#: app/models/my_mail.rb:73
+msgid "Size to small"
+msgstr "Grösse zu klein."
+
+#: app/models/my_mail.rb:76
+msgid "Size to big"
+msgstr "Grösse zu gross"
+
+#: app/models/my_mail.rb:81
+msgid "Already taken"
+msgstr "Bereits vergeben"
+
+#: app/models/my_mail.rb:86
+msgid "This name is reserved"
+msgstr "Dieser Name ist reserviert"
+
+#: app/models/contact.rb:4
+msgid "Enter your last name"
+msgstr "Geben Sie ihren Nachnamen ein."
+
+#: app/models/dial_profile.rb:27 app/models/dial_profile.rb:31
+#: app/models/dial_profile.rb:35
+msgid "EXPIRED"
+msgstr "ABGELAUFEN"
+
+#: app/models/dial_profile.rb:32
+msgid "Time left:"
+msgstr ""
+
+#: app/helpers/application_helper.rb:15
+msgid "Processing..."
+msgstr "Bitte warten..."
+
+#: app/helpers/application_helper.rb:16
+msgid "Show _MENU_ entries"
+msgstr "_MENU_ Einträge anzeigen"
+
+#: app/helpers/application_helper.rb:17
+msgid "No matching records found"
+msgstr "Keine Einträge vorhanden"
+
+#: app/helpers/application_helper.rb:18
+msgid "Showing _START_ to _END_ of _TOTAL_ entries"
+msgstr "_START_ bis _END_ von _TOTAL_ Einträgen"
+
+#: app/helpers/application_helper.rb:19
+msgid "Showing 0 to 0 of 0 entries"
+msgstr "0 bis 0 von 0 Einträgen"
+
+#: app/helpers/application_helper.rb:20
+msgid "(filtered from _MAX_ total entries)"
+msgstr "(gefiltert von _MAX_  Einträgen)"
+
+#: app/helpers/application_helper.rb:22
+msgid "Search"
+msgstr "Suchen"
+
+#: app/helpers/application_helper.rb:24
+msgid "First"
+msgstr "Erster"
+
+#: app/helpers/application_helper.rb:25
+msgid "Previous"
+msgstr "Zurück"
+
+#: app/helpers/application_helper.rb:26
+msgid "Next"
+msgstr "Nächste"
+
+#: app/helpers/application_helper.rb:27
+msgid "Last"
+msgstr "Letzte"
+
+#: app/helpers/application_helper.rb:29
+msgid "All"
+msgstr "Alle"
+
+#: app/helpers/application_helper.rb:135 app/helpers/application_helper.rb:150
+msgid "Errors"
+msgstr "Fehler"
+
+#: app/helpers/application_helper.rb:180 app/helpers/application_helper.rb:191
+msgid "Circuit can not be monitored"
+msgstr "Verbindung kann nicht überwacht werden"
+
+#: app/helpers/application_helper.rb:182
+msgid "We can ping the CPE"
+msgstr "Wir können die CPE pingen"
+
+#: app/helpers/application_helper.rb:185
+msgid "We can not ping the CPE but we see its MAC address"
+msgstr "Wir können die CPE nicht pingen, aber wir sehen ihre MAC Adresse"
+
+#: app/helpers/application_helper.rb:188
+msgid "Circuit is monitored DOWN"
+msgstr "Verbindung ist DOWN"
+
+#: app/helpers/application_helper.rb:196
+msgid "(last checked: %s ago)"
+msgstr "(letzte mal gechecked vor %s)"
+
+#: app/views_satspace/sessions/_menu.html.erb:17
+#: app/views/sessions/_menu.html.erb:17
+msgid "Log Out"
+msgstr "Abmelden"
+
+#: app/views_satspace/sessions/_menu.html.erb:23
+#: app/views/sessions/_menu.html.erb:23
+msgid "Click for help"
+msgstr "Click für Hilfe"
+
+#: app/views_satspace/sessions/_menu.html.erb:23
+#: app/views/sessions/_menu.html.erb:23
+msgid "HELP"
+msgstr "HILFE"
+
+#: app/views/feedback/ticket.html.erb:1
+msgid "Feedback Form"
+msgstr "Rückmeldeformular"
+
+#: app/views/feedback/ticket.html.erb:4
+msgid ""
+"Thank you for contacting our support. To improve our service we kindly\n"
+"   as you to fill out this form. It will allow us to review service quality "
+"provided. <br>\n"
+"   Please note that only the team supervisor will have access to the results."
+"<br><br>\n"
+"   <i>Thank You!</i>\n"
+msgstr ""
+"Vielen Dank fuer Ihre kontataktanfrage. Um unseren Service zu verbessern "
+"bitten wir siedieses Formular auszufüllen. Es ermöglicht uns unsere "
+"Servicequalität zu überprüfen.<br>Bitte beachten Sie dass nur der Team "
+"Supervisor zugang zu den Ergebnissen bekommt.<br><br><i>Vielen Dank</i>"
+
+#: app/views/feedback/ticket.html.erb:14
+msgid "Feedback for Ticket"
+msgstr "Rückmeldung für das Ticket"
+
+#: app/views/feedback/ticket.html.erb:29
+#: app/views/support/_form_technical.html.erb:54
+msgid "Send"
+msgstr "Abschicken"
+
+#: app/views/feedback/ticket_submit_thanks.html.erb:1
+msgid "Thank you"
+msgstr "Danke"
+
+#: app/views/feedback/ticket_submit_thanks.html.erb:4
+msgid "Thank you for your feedback!"
+msgstr "Danke für Ihre Rückmeldung!"
+
+#: app/views/feedback/ticket_already_done.html.erb:1
+msgid "Thank You"
+msgstr "Danke"
+
+#: app/views/feedback/ticket_already_done.html.erb:3
+msgid "We already received feedback for this ticket."
+msgstr "Wir haben bereits Rückmeldung für dieses Ticket erhalten."
+
+#: app/views/feedback/_form_feedback_ticket.html.erb:14
+msgid "Overall Satifaction"
+msgstr "Allgemeine Zufriedenheit"
+
+#: app/views/feedback/_form_feedback_ticket.html.erb:19
+msgid "Disagree"
+msgstr "Dagegen"
+
+#: app/views/feedback/_form_feedback_ticket.html.erb:20
+msgid "Neutral"
+msgstr "Neutral"
+
+#: app/views/feedback/_form_feedback_ticket.html.erb:21
+msgid "Agree!"
+msgstr "Zustimmung"
+
+#: app/views/feedback/_form_feedback_ticket.html.erb:25
+msgid "Support was friendly"
+msgstr "Der Support war freundlich"
+
+#: app/views/feedback/_form_feedback_ticket.html.erb:28
+msgid "Support was helpful"
+msgstr "Support war hilfsreich"
+
+#: app/views/feedback/_form_feedback_ticket.html.erb:31
+msgid "Support was competent"
+msgstr "Der Support war kompetent"
+
+#: app/views/feedback/_form_feedback_ticket.html.erb:34
+msgid "Issue was resolved to my satisfaction"
+msgstr "Das Problem wurde zu meiner Zufriedenheit gelöst"
+
+#: app/views/feedback/_form_feedback_ticket.html.erb:37
+msgid "Time to resolve the issue was reasonable"
+msgstr "Die Zeit das Problem zu lösen war angemessen"
+
+#: app/views/feedback/_form_feedback_ticket.html.erb:44
+msgid "Other Information (optional)"
+msgstr "Weiter Informationen (optional)"
+
+#: app/views/feedback/_form_feedback_ticket.html.erb:46
+msgid "Your name (optional):"
+msgstr "Ihr Name (optional):"
+
+#: app/views/feedback/_form_feedback_ticket.html.erb:47
+msgid "Comments/Info:"
+msgstr "Kommentar/Informationen:"
+
+#: app/views/feedback/_form_feedback_ticket.html.erb:50
+msgid "I want to speak to a supervisor, please contact me."
+msgstr "Ich möchte mit einen Supervisor spreche, bitte kontaktieren Sie micht."
+
+#: app/views/feedback/_form_feedback_ticket.html.erb:53
+msgid "Please enter your contact details into the Comments/Info box"
+msgstr ""
+"Bitte geben Sie Ihre Kontaktinformationen unter Kommentar/Informationen ein."
+
+#: app/views/feedback/ticket_not_found.html.erb:1
+msgid "Ticket not found!"
+msgstr "Ticket nicht gefunden!"
+
+#: app/views/feedback/ticket_not_found.html.erb:3
+msgid "The requested ticket could not be found!"
+msgstr "Das verlangte Ticket konnte nicht gefunden werden!"
+
+#: app/views/configuration/index.html.erb:1
+msgid "IP Configurations"
+msgstr "IP Konfiguration"
+
+#: app/views/configuration/index.html.erb:3
+msgid "This page shows the IP configurations for your circuits."
+msgstr "Diese Seite zeigt IP die Konfigurationen für Ihre Verbindungen."
+
+#: app/views/circuit/configuration.html.erb:1
+#, fuzzy
+msgid "Circuit %s - IP Configuration"
+msgstr "IP Konfiguration"
+
+#: app/views/circuit/configuration.html.erb:21
+msgid "No configuration available, please contact us."
+msgstr "Keine Konfigurationen verfügbar, bitte nehmen Sie mit uns Kontakt auf."
+
+#: app/views/circuit/index.html.erb:8 app/views/graph/index.html.erb:19
+#: app/views/support/_form_technical.html.erb:10
+msgid "Site"
+msgstr "Verbindung"
+
+#: app/views/circuit/index.html.erb:9 app/views/graph/index.html.erb:20
+msgid "Service"
+msgstr "Service"
+
+#: app/views/circuit/index.html.erb:10 app/views/graph/index.html.erb:21
+msgid "Bandwidth"
+msgstr "Bandbreite"
+
+#: app/views/circuit/index.html.erb:11 app/views/graph/index.html.erb:22
+msgid "Monitoring status"
+msgstr "Monitoring Status"
+
+#: app/views/circuit/index.html.erb:19
+msgid "View PayG-Status"
+msgstr ""
+
+#: app/views/circuit/index.html.erb:36
+msgid ""
+"No circuits have been assigned to you, contact %s if you feel that this is "
+"wrong."
+msgstr ""
+"Keine Verbindungen sind bei Ihnen registriert. Bitte  nehmen Sie mit uns "
+"Kontakt auf wenn sie glauben das sei nicht richtig."
+
+#: app/views/circuit/graph.html.erb:1
+msgid "Circuit %s - Bandwidth Utilization"
+msgstr "Verbindung %s - Bandbreite Benutzung"
+
+#: app/views/circuit/graph.html.erb:10 app/views/graph/view.html.erb:13
+msgid "Last 24h"
+msgstr "Letzten 24 Stunden"
+
+#: app/views/circuit/graph.html.erb:14 app/views/graph/view.html.erb:17
+msgid "Last Week"
+msgstr "Letzte Woche"
+
+#: app/views/circuit/graph.html.erb:18 app/views/graph/view.html.erb:21
+msgid "Last Month"
+msgstr "Letzter Monat"
+
+#: app/views/circuit/graph.html.erb:22 app/views/graph/view.html.erb:25
+msgid "Last Year"
+msgstr "Letztes Jahr"
+
+#: app/views/email/index.html.erb:1
+msgid "Manage Email Aliases"
+msgstr "Email-Alias Konten verwalten"
+
+#: app/views/email/index.html.erb:5
+msgid "Your email accounts (%d/%d)"
+msgstr "Ihre Email Konten (%d/%d)"
+
+#: app/views/email/index.html.erb:7
+msgid "Add Email Account"
+msgstr "Email Konto hinzufügen"
+
+#: app/views/email/index.html.erb:9
+msgid ""
+"Mailboxlimit reached, delete unused mailboxes if you want to create new ones"
+msgstr ""
+"Email Kontolimit erreicht. Löschen Sie unbenutzte Konten um neue erstellen "
+"zu können"
+
+#: app/views/email/index.html.erb:15 app/views/aliases/index.html.erb:17
+msgid "Address"
+msgstr "Adresse"
+
+#: app/views/email/index.html.erb:16
+msgid "User"
+msgstr "Benutzer"
+
+#: app/views/email/index.html.erb:17
+msgid "Flags"
+msgstr "Flags"
+
+#: app/views/email/_form_email.html.erb:10 app/views/email/_form_email.html.erb:14
+msgid "Email address"
+msgstr "Email Adresse"
+
+#: app/views/email/_form_email.html.erb:19
+msgid "Full name"
+msgstr "Vor- und Nachname"
+
+#: app/views/email/_form_email.html.erb:21
+msgid "The name of the person who is using it (optional)"
+msgstr "Der Name der Person (optional)"
+
+#: app/views/email/_form_email.html.erb:21
+msgid "Your full name"
+msgstr "Ihr Vor- und Nachname"
+
+#: app/views/email/_form_email.html.erb:31 app/views/sessions/_form_user.html.erb:3
+#: app/views/sessions/login.html.erb:25 app/views/sessions/login_email.html.erb:21
+#: app/views/hotspot/buy_batch_done.erb:11 app/views/hotspot/buy_done.erb:11
+msgid "Password"
+msgstr "Passwort"
+
+#: app/views/email/_form_email.html.erb:35 app/views/sessions/_form_user.html.erb:7
+msgid "Confirm password"
+msgstr "Passwort bestätigen"
+
+#: app/views/email/_form_email.html.erb:37
+msgid "Leave password fields empty to keep the current one."
+msgstr "Lassen Sie das Passwort Feld leer um das jetzige Passwort zu behalten."
+
+#: app/views/email/_form_email.html.erb:45
+msgid "Max message size"
+msgstr "Max grösse einer Mail"
+
+#: app/views/email/_form_email.html.erb:50
+msgid "Antispam Level"
+msgstr "Antispam Level"
+
+#: app/views/email/_form_email.html.erb:61
+msgid "Antivirus enable"
+msgstr "Antivirus einschalten"
+
+#: app/views/email/_form_email.html.erb:67
+msgid "Email Forwarding"
+msgstr "Email Weiterleitung"
+
+#: app/views/email/_form_email.html.erb:68
+msgid ""
+"If a forward is enabled the server will send a copy of each received message "
+"to the email addresses specified below."
+msgstr ""
+"Wenn eine Weiterleitung aktiv ist sender der Server eine Kopie jeder "
+"eingehenden Nachricht zu den Email Adressen wie unten angegeben."
+
+#: app/views/email/_form_email.html.erb:70
+msgid "Forward enable"
+msgstr "Weiterleitung aktiviert"
+
+#: app/views/email/_form_email.html.erb:74
+#: app/views/aliases/_form_alias.html.erb:15
+msgid "Forward to"
+msgstr "Weiterleitung an"
+
+#: app/views/email/_form_email.html.erb:75
+msgid "You can enter more emails seperated by a comma (,)"
+msgstr ""
+"Sie können mehrere Emails mit einem Komma (,) voneinander getrennt eintragen"
+
+#: app/views/email/_form_email.html.erb:78
+msgid "Auto reply / Vacation Message"
+msgstr "Automatische Antwort / Urlaubs Nachricht"
+
+#: app/views/email/_form_email.html.erb:79
+msgid ""
+"Autoreply will automatically answer every incoming mail with the text below."
+msgstr ""
+"\"Automatische Antwort\" antwortet automatisch diesen text an jede "
+"eingehende Email."
+
+#: app/views/email/_form_email.html.erb:80
+msgid "Auto Reply enable"
+msgstr "Automatische Antwort aktiviert"
+
+#: app/views/email/_mailbox_access_info.html.erb:4
+msgid "POP3 Server"
+msgstr "POP3 Server"
+
+#: app/views/email/_mailbox_access_info.html.erb:4
+msgid "(incoming mail server)"
+msgstr "(eingehender Mailserver)"
+
+#: app/views/email/_mailbox_access_info.html.erb:8
+msgid "SMTP Server"
+msgstr "SMTP Server"
+
+#: app/views/email/_mailbox_access_info.html.erb:8
+msgid "(outgoing mail server)"
+msgstr "(ausgehender Mailserver)"
+
+#: app/views/email/_mailbox_access_info.html.erb:10
+msgid "Please enable SMTP authentication!"
+msgstr "Bitte \"SMTP Authentication\" einschalten!"
+
+#: app/views/email/_mailbox_access_info.html.erb:13
+msgid "IMAP Server"
+msgstr "IMAP Server"
+
+#: app/views/email/_mailbox_access_info.html.erb:22
+msgid "Webmail"
+msgstr "Webmail"
+
+#: app/views/email/_mailbox_access_info.html.erb:32
+msgid "Mail in INBOX"
+msgstr "EMail in der INBOX"
+
+#: app/views/email/edit.html.erb:11
+msgid "Update"
+msgstr "Aktualisieren"
+
+#: app/views/email/edit.html.erb:16
+msgid "Mailbox access"
+msgstr "Mailbox zugriff"
+
+#: app/views/email/edit.html.erb:24 app/views/support/contact_edit.html.erb:14
+#: app/views/aliases/edit.html.erb:13
+msgid "Are you sure?"
+msgstr "Sind Sie sicher?"
+
+#: app/views/email/edit.html.erb:26
+msgid "Delete this E-Mail!"
+msgstr "Lösche diese Email!"
+
+#: app/views/email/invalid_setup.html.erb:2
+#: app/views/aliases/invalid_setup.html.erb:2
+msgid ""
+"Your email settings have not applied yet or are incorrect. Please contact %s "
+"support."
+msgstr ""
+"Ihre Email Einstellungen sind noch nicht angemeldet oder falsch. Bitte "
+"kontaktieren sie: %s."
+
+#: app/views/email/delete.html.erb:1
+msgid "Delete email %s"
+msgstr "Email %s löschen"
+
+#: app/views/email/delete.html.erb:3
+msgid "Are you sure? This account currently contains %s messages"
+msgstr "Sind Sie sicher? Dieses Konto enthält z.Z. %s Nachrichten"
+
+#: app/views/email/delete.html.erb:7
+msgid "Delete!"
+msgstr "Löschen!"
+
+#: app/views/graph/index.html.erb:3
+msgid "Graphs show you incoming and outgoing traffic from your circuits"
+msgstr ""
+"Grafiken zeigen Ihnen den ein- und ausgehenden Datenverkehr ihrer "
+"Verbindungen an"
+
+#: app/views/graph/index.html.erb:5
+msgid "Your circuits"
+msgstr "Ihre Verbindungen"
+
+#: app/views/graph/index.html.erb:41
+msgid ""
+"No circuits have been assigned to you, contact support@maxnet.ao if you feel "
+"that this is wrong."
+msgstr ""
+"Es sind keine Verbindungen zu Ihnen zugeortnet, bitte kontaktieren sie "
+"support@maxnet.ao wenn sie meinen das ist falsch."
+
+#: app/views/graph/view.html.erb:2
+msgid "Circuit %s"
+msgstr "Verbindung %s"
+
+#: app/views/sessions/index.html.erb:2
+msgid "Welcome %s"
+msgstr "Willkommen %s"
+
+#: app/views/sessions/index.html.erb:6
+msgid "Logout"
+msgstr "Abmelden"
+
+#: app/views/sessions/index.html.erb:10
+msgid ""
+"Welcome to %s. This interface allows you to modify various settings of the "
+"service %s is providing to you."
+msgstr ""
+"Wilkommen to %s. Diese Schnittstelle ermöglicht Ihnen verschiedene "
+"Einstellungen zu machen die %s Ihnen bereitstellt."
+
+#: app/views/sessions/logout.html.erb:5
+msgid "Thank's for visiting"
+msgstr "Danke für Ihren Besuch"
+
+#: app/views/sessions/logout.html.erb:14
+msgid "Login again"
+msgstr "Nochmal Anmelden"
+
+#: app/views/sessions/_form_user.html.erb:14
+msgid "Change"
+msgstr "Ändern"
+
+#: app/views/sessions/password.html.erb:1
+msgid "Change your My-MAXNET password"
+msgstr "My-MAXNET password ändern"
+
+#: app/views/sessions/login.html.erb:8
+msgid "Login to %s"
+msgstr "An %s Anmelden"
+
+#: app/views/sessions/login.html.erb:13
+msgid ""
+"If you are a %s customer but do not have a login, please contact us or email "
+"%s"
+msgstr ""
+"Wenn sie ein %s Kunde sind, aber kein Login erhalten haben, bitte nehmen Sie "
+"mit uns Kontakt auf oder Email an %s"
+
+#: app/views/sessions/login.html.erb:21 app/views/hotspot/_form_buy.erb:9
+#: app/views/hotspot/buy_batch_done.erb:11 app/views/hotspot/buy_batch.erb:15
+#: app/views/hotspot/buy_done.erb:10 app/views/hotspot/index.erb:46
+msgid "Username"
+msgstr "Benutzername"
+
+#: app/views/sessions/login.html.erb:37
+msgid "Click %s to change your email."
+msgstr "Klicken sie %s um Ihre Email zu ändern."
+
+#: app/views/sessions/login.html.erb:37
+msgid "here"
+msgstr "hier"
+
+#: app/views/sessions/login_email.html.erb:6
+msgid "Login to change one Email"
+msgstr "Anmelden um eine Email zu Ändern"
+
+#: app/views/sessions/login_email.html.erb:9
+msgid ""
+"Login here to change one single email. To manage other emails and your "
+"circuits, use %s."
+msgstr ""
+"Melden Sie sich hier an um Ihre email zu ändern. Um andere Email Konten und "
+"Verbindungen zu verwalten, benutzen Sie %s."
+
+#: app/views/sessions/login_email.html.erb:17
+msgid "Your Email Address"
+msgstr "Ihre Email Adresse"
+
+#: app/views/sessions/login_email.html.erb:29
+msgid "Click %s to login to %s."
+msgstr "Clicken Sie %s um sich bei %s anzumelden."
+
+#: app/views/sessions/_menu.html.erb:18
+msgid "Change Password"
+msgstr "Passwort ändern"
+
+#: app/views/support/contact_edit.html.erb:1
+msgid "Change contact"
+msgstr "Kontakt ändern"
+
+#: app/views/support/contact_edit.html.erb:10
+#: app/views/support/contact_add.html.erb:10
+msgid "Save"
+msgstr "Speichern"
+
+#: app/views/support/contact_edit.html.erb:16
+msgid "Delete this Contact!"
+msgstr "Diesen Kontakt löschen!"
+
+#: app/views/support/index.html.erb:2
+msgid "%s Customer Support Center"
+msgstr "%s Kunden Support Center"
+
+#: app/views/support/index.html.erb:4
+msgid ""
+"The %s support team is happy to assist you with technical requests. For this "
+"we maintain a contact database for you or your company."
+msgstr ""
+"Ihre %s support team hilft Ihnen gerne bei technischen Problemen. Dafuer "
+"verwalten wir eine Kontaktdatenbank für Ihre Firma."
+
+#: app/views/support/index.html.erb:7
+msgid "Technical support"
+msgstr "Technischer Support"
+
+#: app/views/support/index.html.erb:10
+msgid ""
+"Please take one minute to fill out your contact details before we can open a "
+"support request."
+msgstr ""
+"Bitte nehmen Sie sich eine Minute zeit um ihre Kontakdaten zu hinterlassen "
+"bevor wir eine Support Anfrage anmelden können."
+
+#: app/views/support/index.html.erb:11
+msgid "Add Contact"
+msgstr "Kontakt zufügen"
+
+#: app/views/support/index.html.erb:13
+msgid "Request form"
+msgstr "Anfrage Formular"
+
+#: app/views/support/index.html.erb:22
+msgid ""
+"These are your contacts we currently have in our database. You can add or "
+"modify entries if you feel they are wrong. We will use these to contact you "
+"on service related events."
+msgstr ""
+"Diese sind Ihre Kontakt Daten die wir z.Z. in unserer Datenbank haben. Sie "
+"können neue zufügen oder ändern wenn nötig. Wir benutzen diese Kontakte "
+"ausschliesslich für Benachrichtigungen im Zusammenhang unserer Dienste."
+
+#: app/views/support/index.html.erb:24 app/views/support/contacts.html.erb:15
+msgid "Add new contact"
+msgstr "Neuen Kontakt zufügen"
+
+#: app/views/support/index.html.erb:37 app/views/support/contacts.html.erb:13
+msgid "(No Contacts defined)"
+msgstr "(Keine Kontakte angelegt)"
+
+#: app/views/support/_form_contact.html.erb:5
+msgid "Name"
+msgstr "Name"
+
+#: app/views/support/_form_contact.html.erb:5
+msgid "(Firstname/Lastname)"
+msgstr "(Vor-/Nachname)"
+
+#: app/views/support/_form_contact.html.erb:9
+#: app/views/support/_form_contact.html.erb:13
+#: app/views/support/_form_contact.html.erb:17
+msgid "Email Address"
+msgstr "Email Adresse"
+
+#: app/views/support/_form_contact.html.erb:9
+msgid "Work"
+msgstr "Arbeit"
+
+#: app/views/support/_form_contact.html.erb:13
+msgid "Private"
+msgstr "Privat"
+
+#: app/views/support/_form_contact.html.erb:17
+#: app/views/support/_form_technical.html.erb:27
+msgid "Other"
+msgstr "Andere"
+
+#: app/views/support/_form_contact.html.erb:21
+#: app/views/support/_form_contact.html.erb:25
+msgid "Phone"
+msgstr "Telefon"
+
+#: app/views/support/_form_contact.html.erb:21
+msgid "Mobile"
+msgstr "Handy"
+
+#: app/views/support/_form_contact.html.erb:25
+msgid "Fixed"
+msgstr "Festnetz"
+
+#: app/views/support/_form_contact.html.erb:30
+msgid "Position"
+msgstr "Position"
+
+#: app/views/support/_form_contact.html.erb:30
+msgid "eg. 'technical', 'finance'.."
+msgstr "z.B. 'Technisch', 'Buchhaltung'..."
+
+#: app/views/support/_form_contact.html.erb:36
+msgid "Any notes"
+msgstr "Andere Anmerkungen"
+
+#: app/views/support/technical_sent.html.erb:2
+msgid "Request sent!"
+msgstr "Anfrage gesendet!"
+
+#: app/views/support/technical_sent.html.erb:4
+msgid "Your technical support request with subject '%s' has been sent."
+msgstr "Ihre Support anfrage mit Betreff '%s' wurde gesendet."
+
+#: app/views/support/technical_sent.html.erb:5
+msgid "You will get a confirmation to %s and we will contact you shortly"
+msgstr ""
+"Sie erhalten eine Konfirmations-Mail an %s und wir werden sie in kürze "
+"benachrichtigen"
+
+#: app/views/support/_form_technical.html.erb:6
+msgid "Subject"
+msgstr "Betreff"
+
+#: app/views/support/_form_technical.html.erb:14
+msgid "(n/a)"
+msgstr "(n/a)"
+
+#: app/views/support/_form_technical.html.erb:24
+msgid "Type of problem"
+msgstr "Art des Problems"
+
+#: app/views/support/_form_technical.html.erb:28
+msgid "Network down"
+msgstr "Verbindung Aus"
+
+#: app/views/support/_form_technical.html.erb:29
+msgid "Network performance"
+msgstr "Performanz der Verbindung"
+
+#: app/views/support/_form_technical.html.erb:30
+msgid "Request technical assistance"
+msgstr "Technische Hilfe Anfragen"
+
+#: app/views/support/_form_technical.html.erb:33
+msgid "Contact"
+msgstr "Kontakt"
+
+#: app/views/support/_form_technical.html.erb:33
+msgid "Your contact"
+msgstr "Ihr Kontakt"
+
+#: app/views/support/_form_technical.html.erb:50
+msgid "Please describe your request/problem as detailed as possible"
+msgstr "Bitte beschreiben Sie ihre Anfrage/Problem so detailliert wie möglich"
+
+#: app/views/support/contacts.html.erb:1
+msgid "List of contacts"
+msgstr "Kontaktliste"
+
+#: app/views/support/contacts.html.erb:17
+msgid "Back to support center"
+msgstr "Zurrück zum Support-Center"
+
+#: app/views/support/technical.html.erb:1
+msgid "Technical request / Problem report"
+msgstr "Technische Anfrage / Problem Report"
+
+#: app/views/customer_announcements/_index.html.erb:3
+msgid "Latest announcements"
+msgstr "Letzte Mitteilung"
+
+#: app/views/hotspot/buy.erb:2
+msgid "buy a batch of credentials"
+msgstr ""
+
+#: app/views/hotspot/buy.erb:11 app/views/hotspot/account.erb:41
+#: app/views/hotspot/view.erb:55 app/views/hotspot/buy_batch.erb:22
+msgid "Back"
+msgstr "Zurrück"
+
+#: app/views/hotspot/_form_buy.erb:3 app/views/hotspot/buy_batch.erb:8
+msgid "Tariff"
+msgstr "Tarif"
+
+#: app/views/hotspot/_form_buy.erb:4 app/views/hotspot/buy_batch.erb:9
+msgid "-select-"
+msgstr ""
+
+#: app/views/hotspot/_form_buy.erb:10 app/views/hotspot/buy_batch.erb:16
+msgid "Comment"
+msgstr "Kommentar"
+
+#: app/views/hotspot/_form_buy.erb:11 app/views/hotspot/buy_batch.erb:17
+msgid "Buy"
+msgstr "Kaufen"
+
+#: app/views/hotspot/account.erb:1
+msgid "Account Statement"
+msgstr "Kontoauszug"
+
+#: app/views/hotspot/account.erb:16
+msgid "Current Balance:"
+msgstr "Aktuelles Saldo:"
+
+#: app/views/hotspot/account.erb:22
+msgid "Date"
+msgstr "Datum"
+
+#: app/views/hotspot/account.erb:23
+msgid "Info"
+msgstr "Info"
+
+#: app/views/hotspot/account.erb:24
+msgid "Debit"
+msgstr "Soll"
+
+#: app/views/hotspot/account.erb:25 app/views/hotspot/index.erb:47
+msgid "Credit"
+msgstr "Haben"
+
+#: app/views/hotspot/view.erb:2
+msgid "Hotspot account %s"
+msgstr "Hotspot konto %s"
+
+#: app/views/hotspot/view.erb:5
+#, fuzzy
+msgid "Current State:"
+msgstr "Aktuelles Saldo:"
+
+#: app/views/hotspot/view.erb:8
+msgid "ONLINE"
+msgstr "ONLINE"
+
+#: app/views/hotspot/view.erb:8
+msgid "OFFLINE"
+msgstr "OFFLINE"
+
+#: app/views/hotspot/view.erb:16
+msgid ""
+"This account was never used and was only bought recently. You can still "
+"cancel the account and refund the money spent!"
+msgstr ""
+"Dieses Konto wurde noch nie benutzt und wirde erst vor kurzem gekauft. Sie "
+"können das Konto stornieren und Ihr Geld zurrückerstatten lassen."
+
+#: app/views/hotspot/view.erb:20
+msgid "Cancel Account!"
+msgstr "Account Stornieren!"
+
+#: app/views/hotspot/view.erb:27
+msgid "Past Sessions"
+msgstr "Letzte Sitzungen"
+
+#: app/views/hotspot/view.erb:31
+msgid "Start Time"
+msgstr "Start Zeit"
+
+#: app/views/hotspot/view.erb:32 app/views/circuit/monitoring.erb:18
+msgid "Duration"
+msgstr "Dauer"
+
+#: app/views/hotspot/view.erb:33
+msgid "Data Uploaded"
+msgstr "Daten Hochgeladen"
+
+#: app/views/hotspot/view.erb:34
+msgid "Data Downloaded"
+msgstr "Daten runtergeladen"
+
+#: app/views/hotspot/buy_batch_done.erb:2 app/views/hotspot/buy_done.erb:2
+msgid "Hotspot settings"
+msgstr "Hotspot Einstellungen"
+
+#: app/views/hotspot/buy_batch_done.erb:4
+#, fuzzy
+msgid "You successfully purchased hotspot accounts"
+msgstr "Sie haben einen Hotspot account gekauft"
+
+#: app/views/hotspot/buy_batch.erb:14
+#, fuzzy
+msgid "How many passwords?"
+msgstr "Passwort ändern"
+
+#: app/views/hotspot/buy_batch.erb:15
+msgid "will create usernameX, usernameY, ..."
+msgstr ""
+
+#: app/views/hotspot/buy_done.erb:4
+msgid "You successfully purchased a hotspot account"
+msgstr "Sie haben einen Hotspot account gekauft"
+
+#: app/views/hotspot/index.erb:6
+msgid "Buy New"
+msgstr "Neu Kaufen"
+
+#: app/views/hotspot/index.erb:9
+msgid "Account Balance:"
+msgstr "Konto Saldo:"
+
+#: app/views/hotspot/index.erb:10
+msgid "See details"
+msgstr "Details anzeigen"
+
+#: app/views/hotspot/index.erb:15
+msgid "Current users"
+msgstr "Aktiver Benutzer"
+
+#: app/views/hotspot/index.erb:20
+#, fuzzy
+msgid "Search:"
+msgstr "Suchen"
+
+#: app/views/hotspot/index.erb:46
+msgid "Created"
+msgstr "Erstellt"
+
+#: app/views/hotspot/index.erb:47
+msgid "Status"
+msgstr "Status"
+
+#: app/views/circuit/smokeping.erb:24
+msgid "Circuit %s - Latency / Loss Graph"
+msgstr ""
+
+#: app/views/circuit/smokeping.erb:28 app/views/circuit/_smokeping_data.erb:2
+msgid "Unable to generate Graph"
+msgstr ""
+
+#: app/views/circuit/smokeping.erb:33 app/views/circuit/_smokeping_data.erb:7
+#, fuzzy
+msgid "Please contact our helpdesk if you feel this is wrong."
+msgstr ""
+"Keine Verbindungen sind bei Ihnen registriert. Bitte  nehmen Sie mit uns "
+"Kontakt auf wenn sie glauben das sei nicht richtig."
+
+#: app/views/circuit/smokeping.erb:44
+msgid "24h"
+msgstr ""
+
+#: app/views/circuit/smokeping.erb:44
+msgid "2 Days"
+msgstr ""
+
+#: app/views/circuit/smokeping.erb:44
+#, fuzzy
+msgid "Week"
+msgstr "Letzte Woche"
+
+#: app/views/circuit/smokeping.erb:44
+msgid "30 Days"
+msgstr ""
+
+#: app/views/circuit/smokeping.erb:44
+#, fuzzy
+msgid "3 Month"
+msgstr "Letzter Monat"
+
+#: app/views/circuit/smokeping.erb:45
+msgid "One year"
+msgstr ""
+
+#: app/views/circuit/payg.html.erb:1
+#, fuzzy
+msgid "Circuit %s - PAYG overview"
+msgstr "Verbindung %s - IP Konfiguration"
+
+#: app/views/circuit/payg.html.erb:4
+msgid "Volume left:"
+msgstr ""
+
+#: app/views/circuit/payg.html.erb:12
+msgid "No payg configuration for this service."
+msgstr ""
+
+#: app/views/circuit/monitoring.erb:1
+#, fuzzy
+msgid "Circuit %s - Uptime History"
+msgstr "Verbindung %s - Bandbreite Benutzung"
+
+#: app/views/circuit/monitoring.erb:5
+msgid "Our monitoring system was unable to ping your CPE."
+msgstr ""
+
+#: app/views/circuit/monitoring.erb:7
+msgid ""
+"The information below is based on the ARP cache on our access router and is "
+"inaccurate."
+msgstr ""
+
+#: app/views/circuit/monitoring.erb:9
+msgid ""
+"It can still give you a reasonable indication on your circuit state. Please "
+"allow ICMP ping for accurate monitoring"
+msgstr ""
+
+#: app/views/circuit/monitoring.erb:16
+msgid "Time"
+msgstr ""
+
+#: app/views/circuit/monitoring.erb:17
+#, fuzzy
+msgid "State"
+msgstr "Status"
+
+#: app/views/circuit/monitoring.erb:32
+msgid "Since"
+msgstr ""
+
+#: app/views/circuit/monitoring.erb:42
+msgid "Monitored by"
+msgstr ""
+
+#: app/views/circuit/monitoring.erb:43
+msgid "ICMP Ping"
+msgstr ""
+
+#: app/views/circuit/monitoring.erb:43
+msgid ""
+"CPE MAC Address on access router ARP cache - inaccurate, please allow PING"
+msgstr ""
+
+#: app/views/aliases/edit.html.erb:1
+msgid "Edit alias account"
+msgstr "Alias editieren"
+
+#: app/views/aliases/edit.html.erb:13
+msgid "Delete this alias"
+msgstr "Diesen Alias löschen"
+
+#: app/views/aliases/index.html.erb:2
+msgid "Your alias accounts (%d/%d)"
+msgstr "Ihre Email Aliase (%d/%d)"
+
+#: app/views/aliases/index.html.erb:5
+msgid "Add Alias"
+msgstr "Alias zufügen"
+
+#: app/views/aliases/index.html.erb:6
+msgid ""
+"Mailboxlimit reached, delete unused aliases if you want to create new ones"
+msgstr ""
+"Sie haben Ihr Limit erreicht, löschen Sie unbenutzte Aliase um neue anzulegen"
+
+#: app/views/aliases/index.html.erb:10
+msgid "No Aliases defined"
+msgstr "Kein Alias definiert."
+
+#: app/views/aliases/index.html.erb:18
+msgid "Alias To"
+msgstr "Alias zu"
+
+#: app/views/aliases/_form_alias.html.erb:2
+msgid ""
+"An email alias is a virtual email address. It will forward incoming mail to "
+"one or more addresses. "
+msgstr ""
+"Ein Email Alias ist eine virtuelle Adresse. Sie leite eingehende Email an "
+"eine oder mehrere Adressen."
+
+#: app/views/aliases/_form_alias.html.erb:4
+msgid ""
+"For example sales@yourdomain.com can forward a mail to all your sales staff."
+msgstr ""
+"Zum Beispiel verkauf@yourdomain.com kann eine email zu allen "
+"Verkaufspersonal verteilen."
+
+#: app/views/aliases/_form_alias.html.erb:9
+msgid "Alias Address"
+msgstr "Alias Adresse"
+
+#: app/views/aliases/_form_alias.html.erb:15
+msgid "Separate emails with a comma (,)"
+msgstr "Einzelne Emails mit einem Komma (,) voneinander trennen "
+
+#~ msgid "No Emails defined"
+#~ msgstr "Keine Emails definiert"
+
+#~ msgid "[AUTO REPLY ON]"
+#~ msgstr "[AUTOMAITSCHE ANTWORT AN]"
+
+#~ msgid "[FORWARD ON]"
+#~ msgstr "[WEITERLEITUNG AN]"

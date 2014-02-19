@@ -1,0 +1,9 @@
+<%= headline _("Technical request / Problem report") %>
+
+<%= error_messages_simple @errors %>
+
+<%= form_tag :action => 'technical' do %>
+
+<%= render :partial => 'form_technical' %>
+
+<% end %>

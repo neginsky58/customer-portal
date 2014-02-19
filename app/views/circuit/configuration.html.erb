@@ -1,0 +1,24 @@
+<%= headline _("Circuit %s - IP Configuration") % @circuit.nice %>
+  <p>
+   <% @circuit.ip_networks.each do |net| %><br>
+      <% info = net.info %>
+      <table class='ipaddr'>
+        <tr class='title'><td colspan=3><%= info[:type] + ' ' +info[:name] %></td></tr>
+          <tr class='ipusage'><td>IP</td><td>Netmask</td><td>Usage</td></tr>
+          <%  info[:ips].each do |ip| %>
+          <tr>
+           <td><%= ip[0] %></td>
+           <td><%= net.nice_mask %></td> 
+           <td><%= ip[1] %></td>
+          </tr>
+        <% end %>
+        <% info[:info].each do |ifo| %>
+          <tr><td class='info' colspan=3><%= ifo %><td></tr>
+        <% end %>
+      </table>
+   <% end %>
+   <% if @circuit.ip_networks.empty? then %>
+     <i><%= _("No configuration available, please contact us.") %></i>
+   <% end %>
+  </p>
+  <br><br>

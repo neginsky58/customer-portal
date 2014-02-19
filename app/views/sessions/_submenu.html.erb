@@ -1,0 +1,17 @@
+
+<%
+ def subitem(text, linkto)
+     li = linkto.dup.delete_if { |k,v| k==:title || k == :active }
+     url =   (linkto[:url]) ? linkto[:url] : url_for(li)
+     if (linkto[:active]) then
+       "[<a href='#{url}'><b>#{text}</b></a>]"
+     else
+       "[<a href='#{url}'>#{text}</a>]"
+     end
+   end
+%>
+
+<% @submenu.each do |item| %>
+   <%= subitem(h(item[:title]), item).html_safe %>
+<% end %>
+<br/>

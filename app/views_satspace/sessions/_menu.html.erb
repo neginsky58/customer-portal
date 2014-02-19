@@ -1,0 +1,54 @@
+<% 
+   def item(text, img, linkto, title=nil)
+    # svenhack to make locale stuff working.. I do not get the concept at all...!
+   # linkto[:locale] =  Locale.base_language unless linkto[:locale]
+   
+     c =  controller.controller_name == linkto[:controller] ? 'selected' : 'normal'
+     ("<li><a class='#{c}' href='"+url_for(linkto)+"' title='#{title || text}' >"+
+        image_tag(img, :border=>0) + text + "</a></li>").html_safe
+        
+   end
+%>
+
+<div class='navigation'>
+
+<div class='rightnav'>
+
+   <%= item(_('Log Out'), 'exit.png', { :controller => 'sessions', :action => 'logout' ,:reseller=>@reseller}) %>
+   <%= item(_('Session'), 'session.png', { :controller => 'sessions', :action => 'password' }) %>
+
+   <% if @online_help %>
+     <li onclick='show_help()' style='cursor:pointer' id='online-help-show'>
+       <a class='normal'>
+         <img src='/images/online-help.png' alt='click for help' title='<%= _("Click for help") %>'><%= _('HELP') %>
+       </a>
+     </li>
+   <% end %>
+
+</div>
+
+<div class='leftnav'>
+<% if session[:user] %>
+  <% if MODULES.include?('mail') then %>
+        <%= item(_('Email'), 'mail.gif', { :controller => 'email' }) if
+                  (@session[:user].permission_to?('c,mail,'))%>
+  <% end %>
+ 
+  <%= item(_('Circuits'), 'graph.png', { :controller => 'circuit' }) if 
+                  (@session[:user].permission_to?('c,circuits,')) %>
+  
+  <%= item(_('Hotspot'), 'hotspot.png', {:controller => 'hotspot' }) if 
+                ((@session[:user].customer.dial_tariffs.size > 0) &&
+                 (@session[:user].permission_to?('c,hotspot,')) ) %>
+ 
+  <% if MODULES.include?('support') and (!@agent or @features[:support]) then %>
+  <%= item(_('Support'), 'support.png', { :controller => 'support' }) %>
+  <% end %>
+  <%# item(_('Session'), 'session.png', { :controller => 'sessions' }) %>
+<% end %>
+</div>
+
+</div>
+
+
+

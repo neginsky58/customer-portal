@@ -1,0 +1,13 @@
+
+<%= headline _("Welcome %s") % @session[:user].fullname %>
+
+<p align='right'>
+<%= blink_to _("Change password"), :action => 'password' %>
+<%= blink_to _("Logout"), :action => 'logout',:reseller=>@reseller %>
+</p>
+
+<p>
+<%= _("Welcome to %s. This interface allows you to modify various settings of the service %s is providing to you.") % [get_portal_name, get_company_name] %>
+</p>
+
+

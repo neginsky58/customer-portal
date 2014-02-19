@@ -1,0 +1,17 @@
+<%= headline _("List of contacts") %>
+<br>
+<ul>
+<% @contacts.each do |c| %>
+ <li>
+ <%= render :partial => 'show_contact_item', :object => c %>
+ <br>
+ </li>
+<% end %>
+</p>
+</ul>
+
+<%= _("(No Contacts defined)") if @contacts.empty? %>
+<br>
+<%= alink_to _("Add new contact"), :action => 'contact_add' %>
+<br>
+<%= alink_to _("Back to support center"), :action => 'index' %>

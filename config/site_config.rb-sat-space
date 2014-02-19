@@ -1,0 +1,44 @@
+SITE_CONFIG = {}
+SITE_CONFIG[:view_directory] = 'app/views_satspace'
+SITE_CONFIG[:company_name]  = 'Sat Space Africa'
+SITE_CONFIG[:default_language]  = 'en'
+
+SITE_CONFIG[:company_hid]   = 'sat-space-africa'
+SITE_CONFIG[:portal_name]   = 'My Sat-Space'
+SITE_CONFIG[:support_email] = 'support@sat-space.net'
+SITE_CONFIG[:smtp_server] = 'smtp.sat-space.net'
+SITE_CONFIG[:pop3_server] = 'pop3.sat-space.net'
+SITE_CONFIG[:webmail_server] = 'http://webmail.sat-space.net'
+SITE_CONFIG[:website] = 'http://www.sat-space.net/'
+SITE_CONFIG[:hotspot_image] = 'hotspot_sat_space.png'
+SITE_CONFIG[:ticket_queue_emails] = {'support'=>'support@sat-space.net','noc'=>'noc-tickets@sat-space.net'}
+
+
+SITE_CONFIG[:contact_full_html] = <<CEND
+<b>Sat Space Africa, Ldt</b><br/>
+  <table>
+    <tr>
+      <td valign='top'> Tel:
+      </td>
+      <td valign='top'>
+           UK +44 2070609696<br>
+           US +1 7169926688<br>
+      </td>
+    </tr>
+    <tr><td valign='top'>Skype:</td>
+        <td valign='top'>sat-space-africa</td>
+    </tr>
+    <tr><td valign='top'>Email:</td>
+        <td valign='top'>support@sat-space.net<br>
+                         sales@sat-space.net<br>
+        </td>
+    </tr>
+ </table>
+CEND
+
+
+TEXT_DOMAIN = 'mbms'
+DEFAULT_LOCALE = 'pt'
+MODULES = ['mail', 'graph', 'support', 'configuration'].freeze
+POP3_SERVER = '196.216.48.67'
+

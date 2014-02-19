@@ -1,0 +1,687 @@
+@charset "utf-8";
+/* CSS Document */
+
+html {
+ overflow-y: scroll;
+}
+
+body {
+	background-color: #ffffff;
+	background-repeat: no-repeat;
+	text-align: center; /* to correct the centering IE bug*/
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	margin-top: 30px;
+	margin-bottom: 0px;
+}
+
+body A:link {text-decoration: none; color:blue;}
+body A:visited {text-decoration: none; color:blue;}
+body A:active {text-decoration: none; color:blue;}
+body A:hover {text-decoration: underline overline; color: blue;}
+
+small {
+  font-size: 10pt;
+  color: gray;
+}
+
+
+h1 {
+	font-size: 25px;
+	font-weight: bold;
+	width: 100%;
+	border-bottom:1px solid #AAAAAA;
+}
+
+h2 {	
+	font-size: 15px;
+	font-weight: bold;
+	width: 100%;
+	border-bottom:1px solid #AAAAAA;
+
+}
+h3 {
+	font-size: 12px;
+	font-weight: bold;
+}
+p, li {
+	font-size: 12px;
+}
+
+h6 {	
+	font-size: 18px;
+	font-weight: bold;	
+	color: #7E81A5
+}
+
+
+/*These are the styles for the languages section*/
+
+.languages{
+	width: 989px;
+	margin-right: auto;
+	margin-left: auto;
+	height: 26px;
+	text-align: right;
+	vertical-align: middle;
+	line-height: 12px;
+	font-size: 9px;
+	color: #FFFFFF;
+}
+.languages img{
+	float:right
+}
+#languages_centre {
+	position:relative;
+	z-index:8;
+	vertical-align: middle;
+	min-width:10px;
+	float: right;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+/*This is where the main container styles start*/
+
+#main_container {
+	width: 979px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: left;
+	background-color: #FFFFFF;
+	margin-top: 4px;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 15px;
+	padding-left: 5px;
+	background-position: top;
+}
+
+/*These are the styles for the header section*/
+
+.header {
+	position: relative;
+	height: 79px;
+	width: 979px;
+}
+#topbanner {
+	position: relative;
+	top: 0px;
+	width: 402px;
+	height: 79px;
+	float: right;
+}
+
+#logo {
+	position: absolute;
+	height: 79px;
+	width: 577px;
+}
+
+/*These are the styles for the navigation section*/
+
+.navigation {
+	position: relative;
+	height: 30px;
+	width: 979px;
+	text-align: right;
+	color: #000000;
+	z-index: 7;
+	text-transform: uppercase;
+	margin-top: 1px;
+	background-color: #ffffff;
+	background-repeat: repeat-x;
+}
+
+.navigation a{
+background: url("../images/sprites.png") no-repeat scroll -9999px 50% transparent;
+border-radius: 7px 7px 7px 7px;
+padding-top:4px;
+	text-shadow:1px 1px 0 #fbfbfb;
+					display:block;
+				background-position:0 -38px;
+				background-repeat:repeat-x;
+				height:28px;
+				line-height:28px;
+				width:120px;
+				text-align:center;
+				text-transform:uppercase;
+				color:#414141;
+				font-size:11px;
+				font-weight:700;
+				border:1px solid #d3d3d3;
+
+
+}
+
+.navigation a.selected,
+.navigation a:hover
+{
+  color: #000000;
+	background-color: #fafafa;
+}
+
+
+.leftnav li,
+.rightnav li
+{
+	margin-left: 4px;
+	margin-right: 4px;
+	padding: 0;
+	list-style: none;
+}
+.leftnav li {
+	float: left;
+	height: 26px;
+}
+.leftnav li a{
+	display: block;
+	height: 30px;
+	margin: 0px 0px 0 0 ;
+	font-weight: bold;
+	font-size: 10px;
+	text-align: center;
+	text-decoration: none;
+	line-height: 24px;
+	color: #000;
+	background-color: #ffffff;
+}
+
+.rightnav li {
+	float: right;
+/*	width: 100px; */
+        padding-left: 5px;
+        padding-right: 5px;
+	height: 30px;
+}
+.rightnav li a{
+	display: block;
+	height: 30px;
+	margin: 0px 0px 0 0 ;
+	font-weight: bold;
+	font-size: 10px;
+	text-align: center;
+	text-decoration: none;
+	line-height: 24px;
+	color: #000;
+	background-color: #ffffff;
+}
+
+
+/*These are the styles for the subnavigation section*/
+
+.subnavigation {
+	position: relative;
+	height: 26px;
+	width: 979px;
+	text-align: right;
+	background-image: url(images/template1/template1_style1_img2.jpg);
+	color: #ffffff;
+	z-index: 7;
+	text-transform: uppercase;
+	background-color: #384280;
+	background-repeat: repeat-x;
+	border-top-width: 1px;
+	border-top-color: #313a70;
+	border-top-style: solid;
+}
+
+.subnav ul,
+.subnav li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+}
+.subnav li {
+	float: left;
+	height: 26px;
+	display:inline;
+	width:13%
+
+}
+.subnav li a{
+	display: block;
+	height: 26px;
+	margin: 0px 0px 0 0 ;
+	font-weight: bold;
+	font-size: 10px;
+	text-align: center;
+	text-decoration: none;
+	line-height: 24px;
+	color: #fff;
+	background-color: #384280;
+	padding-right: 30px;
+	padding-left: 30px;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+.subnav a.subselected,
+.subnav a:hover
+{
+	background-color: #4d55a3;
+	color:#FFFFFF;
+}
+
+/*This where the content section starts*/
+
+.content {
+	position: relative;
+	background-repeat: repeat-x;
+	top: -17px;
+	_top: 0px;
+	background-position: top;
+	background-color: #FFFFFF;
+	vertical-align: top;
+}
+
+/*These are the styles for the content image section*/
+
+#contentImage {
+	position: absolute;
+	height: 100%;
+	margin: 0px;
+	top: 20px;
+	width: 322px;
+	float: left;
+}
+
+/*These are the styles for the content text section*/
+
+#contentText {
+	position: relative;
+	height: auto;
+	color: #000000;
+	background-position: top;
+	top: 20px;
+	bottom: 0px;
+	width: 570px;
+	padding: 0px;
+	margin-top: 0px;
+	left: 362px;
+	min-height: 374px;
+	_height: 391px;
+}
+.indentedHomePageHeading {
+	font-size: 18px;
+	padding-left: 105px;
+	font-weight: bold;
+	color: #232a61;
+}
+.indentedHomePageList {
+	font-size: 18px;
+	color: #232a61;
+	padding-left: 105px;
+	margin-left: 20px;
+}
+.indentedHomePageList li{
+	font-size: 18px;
+}
+
+/*These are the styles for the 3 column at the bottom of the page*/
+
+#columnsAtBottom {
+	position: relative;
+	height: auto;
+	width: 959px;
+	background-image: url(images/template1/template1_style1_img4.jpg);
+	top: 0px;
+	padding-top: 0px;
+	margin-top: 20px;
+	bottom: 10px;
+	left: 10px;
+	background-color: #FF00FF;
+}
+#columnsAtBottom table {
+	background-color: #161c47;
+	background-image: url(images/tablebg.jpg);
+	background-repeat: no-repeat;
+	color: #FFFFFF;
+}
+.topCells {
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-bottom-color: #FFFFFF;
+	border-left-color: #FFFFFF;
+	font-size: 13px;
+	font-weight: bold;
+	padding-top: 16px;
+	padding-bottom: 3px;
+	text-align: left;
+	padding-right: 18px;
+	padding-left: 18px;
+}
+.bottomCells{
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-top-color: #FFFFFF;
+	border-bottom-color: #FFFFFF;
+	border-left-color: #FFFFFF;
+	font-size: 11px;
+	color: #FFFFFF;
+	top: 10px;
+	_padding-top:10px;
+	padding-bottom: 15px;
+	padding-right: 18px;
+	padding-left: 18px;
+	text-align: left;
+	vertical-align: top;
+}
+.bottomCells img{
+	float: right;
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #CCCCCC;
+	padding-left: 8px;
+	margin-left: 5px;
+}
+.bottomCells p {
+	font-size: 11px;
+	color: #FFFFFF;
+}
+.bottomCells a, .bottomCells a:visited{
+	color:#ffa823;
+	font-size: 11px;
+}
+.bottomCells a:hover {
+	color:#ffa823;
+	font-size: 11px;
+	text-decoration:underline;
+}
+.bottomCells #leftList {
+	position:relative;
+	top:0px;
+	width:135px;
+	z-index:8;
+	float: left;
+	background-position: top;
+	margin: 0px;
+	height: auto;
+	top:10px;
+	_top:0px;
+}
+.bottomCells #rightList {
+	position:relative;
+	top:0px;
+	width:140px;
+	z-index:8;
+	float: right;
+	background-position: top;
+	height: auto;
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #CCCCCC;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	padding-left: 5px;
+	top:10px;
+	_top:0px;
+}
+.bottomCells #leftList ul,
+.bottomCells #rightList ul{
+	margin-top:0px;
+	margin-left:10px;
+	padding-left:10px;
+	padding-top: 0px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	padding-right: 0px;
+	color:#ffa823;
+}
+.bottomCells #leftList a,
+.bottomCells #rightList a{
+	color:#FFFFFF;
+	font-size:12px;
+}
+
+/*These are the styles for the footer section*/
+
+#footer {
+	width: 989px;
+	margin-right: auto;
+	margin-left: auto;
+	height: 26px;
+	text-align: right;
+	vertical-align: middle;
+	margin-top: 5px;
+	font-size: 10px;
+	color: #FFF;
+}
+#footer a{
+	color:#FFF;
+	font-size:10px;
+}
+#footer a:hover{
+	color:#FFF;
+	font-size:10px;
+}
+#footer a:visited{
+	color:#FFF;
+	font-size:10px;
+}
+
+
+
+.flash-message {
+  margin: 3px;
+  padding: 5px;
+  background: #FFF2B9;
+  border: 1px dotted #2e8b57;
+  z-index: 10;
+}
+
+.online-help {
+ background-color: #DDDDFF;
+ padding: 5px;
+ border: 2px solid #3333AA;
+ position:absolute;
+ margin-top:70px;
+ min-height:400px;
+ right:10px;
+ width:250px;
+ z-index:8;
+ text-align: left;
+}
+
+/*
+.location {
+  display:block;
+  padding: 2px 0 2px 2px;
+  width: 100%;
+  background-color: #ECECEC;
+  border-bottom: 1px solid gray;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+  margin-bottom: 10px;
+}
+*/
+.location {
+  padding: 20px 0 2px 2px;
+  border-bottom: 1px solid gray;
+  margin-bottom: 10px;
+}
+
+
+table.ipaddr {
+}
+
+table.ipaddr td {
+ border-style: solid;
+ border-width: 1px;
+ border-color: gray;     
+}
+
+table.ipaddr tr.ipusage {
+  background-color:#CECECE;
+  font-weight:bold;
+  font-size: 8pt;
+}
+table.ipaddr tr.title * {
+ background-color:#EAEAEA;
+ font-size: 12pt;
+ letter-spacing: 1.4pt;
+ font-weight: bold;
+}
+
+table.ipaddr td.info {
+  background-color:#EAEAEA;
+  font-size:8pt;
+  padding-left: 8px;
+  font-weight:bold;
+  font-style: italic;
+}
+table.nice th {
+  border-bottom:1px solid gray;
+}
+
+table.nice td {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+                .getInTouch {
+                        background:url(/images/getInTouch.jpg) no-repeat right top;
+                        width:281px;
+                        height:51px;
+                        line-height:47px;
+                        display:block;
+                        text-indent:30px;
+                        font-weight:700;
+                        color:#fff;
+                        font-size:24px;
+                        text-shadow:1px 1px 0 #ff8900;
+                }
+                .getInTouch:hover,
+                .getInTouch:focus {
+                        background-position:0 0;
+                        text-decoration:none;
+                        text-shadow:1px 1px 0 #000;
+                        color: white;
+                }
+
+
+
+/* sprites
+------------------------------------------------------------- */
+
+#langPicker a,
+#mainNav a,
+#userQuickAccess,
+#secondNav,
+.icon,
+.readmore,
+.applyForThis a,
+.productSliderPages a,
+.availability {
+	background:url(../images/sprites.png) no-repeat -9999px;
+}
+
+/* icons
+------------------------------------------------------------- */
+.icon {
+	width:16px;
+	height:16px;
+	display:inline-block;
+	vertical-align:middle;
+	margin-right:.5em;
+}
+	.icon.email { background-position:-3px -179px; }
+	.icon.user { background-position:-3px -160px;}
+
+/* css3
+------------------------------------------------------------- */
+#userQuickAccess,
+#mainNav a,
+#featuresHomeBox,
+#secondNav,
+.shortcutsBoxes .box,
+.readmore,
+.applyForThis a {
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+}
+#userQuickAccess a,
+#mainNav a {
+	text-shadow:1px 1px 0 #fbfbfb;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.navigation a, #userQuickAccess,.navigation, .icon, .readmore, .applyForThis a, .productSliderPages a, .availability
+
+{
+background-color: transparent;
+background-image: url("../images/sprites.png");
+background-repeat: no-repeat;
+background-attachment: scroll;
+background-position: -9999px 50%;
+background-clip: border-box;
+background-origin: padding-box;
+background-size: auto auto;
+}
+
+
+table.monitoring {
+}
+
+table.monitoring th {
+  font-size:12pt;
+  font-weight: bold;
+  border-bottom:2px solid black;
+  margin-bottom: 10px;
+}
+
+table.monitoring td {
+  padding:0 10px 0 10px;
+  border-bottom:1px solid #D4D0E3;
+}
+
+
+a.link {
+   cursor: pointer;
+   text-decoration: underline;
+   color: blue;
+}
+
+
+
+
+div.info {
+  background-image:url(/images/info-big.png); 
+  background-repeat:no-repeat;
+  background-position: 5px 5px;
+  
+  padding-left:50px;
+  padding-top:8px;
+  border-color: #A4B9EC;
+  border-top: 1px solid #A4B9EC;
+  border-right: 1px solid #A4B9EC;
+  border-bottom: 1px solid #A4B9EC;
+  border-left: 1px solid #A4B9EC;
+  margin-bottom: 10px;
+  background-color:#D4DEF6';
+  width: 300px;
+  min-height:32px;
+  height:auto !important;
+  height:32px;
+}
+
+
+
+

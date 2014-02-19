@@ -1,0 +1,23 @@
+<%= headline _("Buy Hotspot Internet (Batch-Mode)") %>
+
+<%= error_messages @errors if @errors %>
+
+<%= form_tag :action => 'buy_batch' do %>
+ 
+<table>
+ <tr><td><%= _("Tariff") %></td><td><%= select_tag('tariff_id', 
+                options_for_select(([[_('-select-'),'']] + @tariffs.map { |t| 
+                                                               ["#{t.name} (#{t.display_price})", t.id.to_s] 
+                                                         }),
+                                                       @tariff_id.to_s) )
+ %></td></tr>
+ <tr><td><%= _("How many passwords?") %></td><td><%= text_field_tag :batch_size, @batch_size %></td></tr>
+ <tr><td><%= _("Username") %></td><td><%= text_field_tag :username, @username %> <i><%= _('will create usernameX, usernameY, ...')%></i></td></tr>
+ <tr><td><%= _("Comment") %></td><td><%= text_field_tag :comment, @comment %></td></tr>
+ <tr><td></td><td><%= submit_tag _("Buy") %> </td></tr>  
+</table>
+<% end %>
+<br>
+
+<%= blink_to _("Back"),  :action => 'index' %>
+

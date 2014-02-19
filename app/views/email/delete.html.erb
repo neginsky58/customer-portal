@@ -1,0 +1,9 @@
+<%= headline _("Delete email %s" % @mail.email_address) %>
+
+<%= _("Are you sure? This account currently contains %s messages" % @inbox) %>
+
+<% form_tag :action => 'delete', :id => @mail.id do %>
+
+<%= submit_tag _("Delete!") %>
+
+<% end %>

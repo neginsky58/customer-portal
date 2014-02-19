@@ -1,0 +1,11 @@
+<%= headline _("Add a new contact") %>
+
+<%= error_messages @fcontact %>
+
+
+<%= form_tag :action => 'contact_add' do %>
+
+<%= render :partial => 'form_contact' %>
+
+<%= submit_tag _("Save") %>
+<% end %>

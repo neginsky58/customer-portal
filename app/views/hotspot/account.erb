@@ -1,0 +1,44 @@
+<%= headline _("Account Statement") %>
+
+
+<%
+ month_limit = 3
+ main_account = @session[:user].customer.main_account
+
+
+ trans = Transaction.find(:all, :conditions => ['journals.created > ? and account_id = ?',
+                                       (Time.now - month_limit.month), main_account.id],
+                                :order => 'id asc',
+                                :joins  =>  'LEFT JOIN journals on trans.journal_id = journals.id' )
+%>
+
+<span style='float:right;font-size:16pt;margin-bottom:20px;'>
+  <%= _("Current Balance:") %>
+  <%= nice_balance(main_account.send(:balance)) %>
+</span>
+<table class='display'>
+<thead>
+ <tr>
+  <th><%= _('Date') %></th>
+  <th><%= _('Info') %></th>
+  <th><%= _('Debit') %></th>
+  <th><%= _('Credit') %></th>
+ </tr>
+</thead>
+<tbody>
+<% trans.each do |t| %>
+  <tr><td><%= t.journal.created.hdatetime %></td>
+      <td><%= t.journal.info.shorten(70) %></td>
+      <td align='right'><%= t.amount > 0 ? t.amount.abs.to_money : '' %></td>
+      <td align='right'><%= t.amount < 0 ? t.amount.abs.to_money : '' %></td>
+  </tr>
+<% end %>
+             
+</tbody>
+
+</table>
+<br>
+<%= blink_to _("Back"),  :action => 'index' %>
+
+<% @js << "$('table.display').dataTable(#{data_table_options});" %>
+

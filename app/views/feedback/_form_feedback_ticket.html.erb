@@ -1,0 +1,61 @@
+<%#= hidden_field_tag 'ticket_code', @ticket.code %>
+<%#= hidden_field_tag 'ticket_token', @ticket.token %>
+
+<table class='nice' style='font-size:8pt'>
+<colgroup>
+  <col width="200px" align="left"></col>  
+  <col width="60px" align="left"></col>
+  <col width="60px" align="left"></col>
+  <col width="60px" align="left"></col>
+  <col width="60px" align="left"></col>
+</colgroup>
+  
+<TR>
+  <TH colspan=6><%= _("Overall Satifaction") %></th>
+</tr>
+<tr>
+ <td></td>
+ 
+   <td colspan=2><%= _("Disagree") %></td>
+   <td colspan=2><%= _("Neutral") %></td>
+   <td colspan=2><%= _("Agree!") %></td>
+
+</tr>
+<tr>
+ <%= rbuttons(_("Support was friendly"), 'rate_friendly') %>
+</tr> 
+<tr>
+ <%= rbuttons(_("Support was helpful"), 'rate_helpful') %>
+</tr> 
+<tr>
+ <%= rbuttons(_("Support was competent"), 'rate_competent') %>
+</tr> 
+<tr>
+ <%= rbuttons(_("Issue was resolved to my satisfaction"), 'rate_satisfaction') %>
+</tr>
+<tr>
+ <%= rbuttons(_("Time to resolve the issue was reasonable"), 'rate_time') %>
+</tr>
+</table>
+<br>
+<br>
+<table class='nice' style='font-size:8pt' width='480px'>
+ <tr>
+ <th colspan=6><%= _("Other Information (optional)") %></th>
+ </tr>
+ <tr><td><%= _("Your name (optional):") %></td><td><%= text_field_tag 'your_name', params['your_name'] %> </td></tr>
+<tr><td><%= _("Comments/Info:") %></td><td><%= text_area_tag 'comment', params['comment'],:rows=>5,:cols => 50 %> </td></tr>
+<tr><td></td>
+    <td><%= check_box_tag 'request_contact_of_supervisor',nil,nil, {:onclick => '$("#cinfo").toggle();'} %> 
+      <%= _("I want to speak to a supervisor, please contact me.") %>
+    <span id='cinfo' style='display:none;color:gray;'>
+    <br>
+    <%= _("Please enter your contact details into the Comments/Info box") %>
+    </span>
+    <br>
+    </td>
+    </tr>
+ 
+ 
+</table>
+

@@ -1,0 +1,12 @@
+
+<table>
+ <tr><td><%= _("Tariff") %></td><td><%= select_tag('tariff_id', 
+                options_for_select(([[_('-select-'),'']] + @tariffs.map { |t| 
+                                                               ["#{t.name} (#{t.display_price})", t.id.to_s] 
+                                                         }),
+                                                       @tariff_id.to_s) )
+ %></td></tr>
+ <tr><td><%= _("Username") %></td><td><%= text_field_tag :username, @username %></td></tr>
+ <tr><td><%= _("Comment") %></td><td><%= text_field_tag :comment, @comment %></td></tr>
+ <tr><td></td><td><%= submit_tag _("Buy") %> </td></tr>  
+</table>

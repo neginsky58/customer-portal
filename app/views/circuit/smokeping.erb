@@ -1,0 +1,56 @@
+<script type='text/javascript'>
+  function update_smoke(time)
+  {
+     $('#smokeping_data').html('<%= image_tag('spinner.gif') %> Loading....');
+     $('#smokeping_data').load('smokeping_generate?circuit=<%= @circuit.site%>&start='+time);
+     nice_timeselect(time);
+  }
+  function nice_timeselect(t)
+  {
+   $('#timeselect a').each(function(i) {
+      tmatch = this.getAttribute('onmousedown').match(/(\d+)/);
+      if (tmatch) {
+         if (tmatch[0] == t) {
+           $(this).removeClass('link');
+         } else {
+           $(this).addClass('link');
+         }
+      }
+   });
+ }
+ 
+</script>
+
+<%= headline _("Circuit %s - Latency / Loss Graph") % @circuit.nice %>
+
+
+ <% if @smokeping_error then %>
+     <h3> <%= _("Unable to generate Graph") %> </h3>
+     <br>
+     <%= @smokeping_error %>
+     <br>
+     <br>
+     <%= _("Please contact our helpdesk if you feel this is wrong.") %>
+     <br>
+     <br>
+     <%= _("Email")%>: <a href='mailto:<%= SITE_CONFIG[:support_email] %>'><%= SITE_CONFIG[:support_email] %></a>
+ <% else %>
+   <div id='smokeping_data' style='height:330px'>
+      <%= image_tag('spinner.gif') %> Loading....
+   </div>
+   <br>
+   
+   <%
+     ts = [[24, _("24h")], [48, _('2 Days')], [24*7, _("Week")], [24*30, _("30 Days")],[24*30*3, _("3 Month")],
+           [24*30*12, _("One year")]]
+   %>
+   <div id='timeselect'>
+     <% ts.each do |t| %>
+      [ <a class='link' onmousedown='update_smoke(<%= t[0] %> )'><%= t[1]%></a>]
+     <% end %>
+   </div>
+   
+<% end %>
+
+
+

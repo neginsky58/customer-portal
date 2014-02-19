@@ -1,0 +1,17 @@
+<%= headline _("Circuit %s - PAYG overview") % @circuit.nice %>
+  <p>
+   <% if @circuit.payg_enable %>
+      <%= _("Volume left:") %> 
+      
+        <% if  @circuit.payg_credit.to_i < 0  %>
+          <span style="color:red;">-<%= @circuit.payg_credit.to_i.abs.to_datasize %></span>
+        <% else %>
+          <%= @circuit.payg_credit.to_i.to_datasize %>
+        <% end %>
+    <% else %>
+      <h2><%= _('No payg configuration for this service.') %></h2>
+    <% end %>
+  
+  </p>
+  <br><br>
+

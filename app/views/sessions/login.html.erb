@@ -1,0 +1,40 @@
+<br>
+<br>
+<%= blink_to "English", :controller => 'sessions', :action => 'login', :locale => 'en',:reseller=>@reseller %>
+<%= blink_to "Português", :controller => 'sessions', :action => 'login', :locale => 'pt',:reseller=>@reseller %>
+<%= blink_to "Deutsch", :controller => 'sessions', :action => 'login', :locale => 'de',:reseller=>@reseller %>
+
+
+<%= headline _("Login to %s") % get_portal_name %>
+<br>
+<%= image_tag 'info.png' %>
+
+
+<%= small _("If you are a %s customer but do not have a login, please contact us or email %s") % 
+        [get_company_name, get_company_name ] %>
+<br>
+<br>
+<FORM action="<%= url_for :action=>'login' %>" method="POST" name='login_form'>
+<table>
+  <tbody>
+    <tr>
+      <td><%= _("Username") %>: </td>
+      <td><INPUT type="text" checked name="username" value="<%= @username %>" size="30" maxlength="120"></td>
+    </tr>
+    <tr>
+      <td><%= _("Password") %>: </td>
+      <td><INPUT type="password" name="passwd" value="" size="30"></td>
+    </tr>
+  </tbody>
+</table>
+
+<input type="hidden" name="reseller" value="<%= @reseller %>" >
+<INPUT type="submit" name="login" value=<%= _("Login") %>>
+
+</FORM>
+
+<br><br>
+<%= image_tag 'mail.gif' %> <%= (_("Click %s to change your email.") % ("<a href='login_email?reseller=#{@reseller}'>" + _("here") + "</a>")).html_safe %>
+
+
+

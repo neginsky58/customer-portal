@@ -1,0 +1,727 @@
+# Created by Tanslate plugin
+# 
+O 'Session'
+T 'Sessão'
+
+# 
+O 'You need to login to access this page'
+T 'Você precisa iniciar uma sessão para aceder esta página'
+
+# 
+O 'Login'
+T 'Início de sessão'
+
+# 
+O 'Username'
+T 'Nome de utilizador'
+
+# 
+O 'Password'
+T 'Senha'
+
+# 
+O 'If you are a MAXNET customer but do not have a login, please contact us or email support@maxnet.ao'
+T 'Se você for um cliente MAXNET mas não tiver um início de uma sessão, contacte-nos por favor ou envie um email para support@maxnet.ao'
+
+# 
+O 'Does not match confirmation.'
+T 'Não corresponde com a confirmação.'
+
+# 
+O 'Enter at least 3 characters'
+T 'Introduza pelo menos 3 carateres'
+
+# 
+O 'Not more than 64 characters'
+T 'Não mais de 64 carateres'
+
+# 
+O 'Wrong username or password'
+T 'Nome de utilizador ou senha errado'
+
+# 
+O 'User '%s''
+T 'Usuário '%s''
+
+# 
+O 'Welcome %s'
+T 'Bem-vindo %s'
+
+# 
+O 'Change password'
+T 'Modifique a senha'
+
+# 
+O 'Logout'
+T 'Saída'
+
+# 
+O 'Welcome to My Maxnet. This interface allows you to modify various settings of the service Maxnet is providing to you. For any questions please contact us at support@maxnet.ao.'
+T 'Bem-vindos ao Meu Maxnet. Esta interface permite que você modifique várias configurações do serviço que a Maxnet lhe está provendo. Caso tenha alguma questão, por favor contate-nos em support@maxnet.ao.'
+
+# 
+O 'Email'
+T 'Correio'
+# T 'Correio eletrónico'
+
+# 
+O 'Graphs'
+T 'Gráficos'
+
+# 
+O 'Change your My-MAXNET password'
+T 'Modifique a sua senha My-MAXNET'
+
+# 
+O 'Confirm password'
+T 'Confirme a senha'
+
+# 
+O 'Change'
+T 'Modifique'
+
+# 
+O 'Errors'
+T 'Erros'
+
+# 
+O 'Password saved! Use new password on next login!'
+T 'Senha salvada! Use a nova senha no próximo início de sessão'
+
+# 
+O 'Your email accounts'
+T 'As suas contas de correio eletrónico'
+
+# 
+O 'Only numbers allowed here'
+T 'Só números permitidos aqui'
+
+# 
+O 'Passwords do not match'
+T 'As senhas não correspondem'
+
+# 
+O 'Enter 3 to 48 characters'
+T 'Introduza de 3 a 48 carateres'
+
+# 
+O 'Invalid format or characters'
+T 'Formato ou carateres inválidos'
+
+# 
+O 'Your email accounts (%d/%d)'
+T 'As suas contas de correio eletrónico (%d/%d)'
+
+# 
+O 'Add Email'
+T 'Adicione Correio Eletrónico'
+
+# 
+O 'Add email account'
+T 'Adicione a conta de correio eletrónico'
+
+# 
+O 'Add'
+T 'Adicionar'
+
+# 
+O 'Email address'
+T 'Endereço de correio eletrónico'
+
+# 
+O 'Full name'
+T 'Nome completo'
+
+# 
+O 'The name of the person who is using it (optional)'
+T 'O nome da pessoa que o está usando (opcional)'
+
+# 
+O 'Max message size'
+T 'Tamanho máximo da mensagem'
+
+# 
+O 'Antispam Level'
+T 'Nível de Antispam'
+
+# 
+O 'off'
+T 'desligado'
+
+# 
+O 'low'
+T 'baixo'
+
+# 
+O 'medium'
+T 'médio'
+
+# 
+O 'high'
+T 'alto'
+
+# 
+O 'Antivirus enable'
+T 'Antivírus activado'
+
+# 
+O 'Forward enable'
+T 'Encaminhamento activado'
+
+# 
+O 'If a forward is enabled the server will send a copy of each received message to the email addresses specified below.'
+T 'Se um encaminhamento estiver activado,o servidor enviará uma cópia de cada mensagem recebida aos endereços de correio eletrónico especificados abaixo.'
+
+# 
+O 'Forward to'
+T 'Encaminhe a'
+
+# 
+O 'You can enter more emails seperated by a comma (,)'
+T 'Você pode introduzir mais correios eletrónicos separados por uma vírgula,()'
+
+# 
+O 'New email is ready'
+T 'O novo correio eletrónico está pronto'
+
+# 
+O 'New Email account %s saved!'
+T 'Nova conta de correio eletrónico %s salva!'
+
+# 
+O 'Mailboxlimit reached, delete unused mailboxes if you want to create new ones'
+T 'Atingido o limite de Caixas de correio, elimine caixas do correio não usadas se você quiser criar novas'
+
+# 
+O 'Email %s'
+T 'Correio eletrónico %s'
+
+# 
+O 'Not available'
+T 'Não disponível'
+
+# 
+O 'Email Address'
+T 'Endereço de Correio eletrónico'
+
+# 
+O 'Fullname'
+T 'Nome completo'
+
+# 
+O 'Mails in INBOX'
+T 'Mensagens em CAIXA DE ENTRADA'
+
+# 
+O 'Antispam'
+T 'Antispam'
+
+# 
+O 'Antivirus'
+T 'Antivírus'
+
+# 
+O 'on'
+T 'activar'
+
+# 
+O 'Forward'
+T 'Encaminhar'
+
+# 
+O 'not active'
+T 'não activo'
+
+# 
+O 'Edit'
+T 'Editar'
+
+# 
+O 'Delete'
+T 'Eliminar'
+
+# 
+O 'Mailbox access'
+T 'Acesso a caixa do correio'
+
+# 
+O 'POP3 Server'
+T 'Servidor de POP3'
+
+# 
+O '(incoming mail server)'
+T '(servidor de recepção de correio )'
+
+# 
+O 'SMTP Server'
+T 'Servidor de SMTP'
+
+# 
+O '(outgoing mail server)'
+T '(servidor de envio decorreio)'
+
+# 
+O 'IMAP Server'
+T 'Servidor de IMAP'
+
+# 
+O 'Webmail'
+T 'Webmail'
+
+# 
+O 'Delete %s'
+T 'Eliminar %s'
+
+# 
+O 'Delete email %s'
+T 'Eliminar correio eletrónico %s'
+
+# 
+O 'Are you sure? This account currently contains %s messages'
+T 'Tem certeza? Esta conta atualmente contém %s mensagens'
+
+# 
+O 'Delete!'
+T 'Eliminar!'
+
+# 
+O 'Email %s deleted!'
+T 'Correio eletrónico %s eliminado!'
+
+# 
+O 'Graphs show you incoming and outgoing traffic from your circuits'
+T 'Os gráficos mostram-lhe o tráfego de entrada e de saída dos seus circuitos'
+
+# 
+O 'Your circuits'
+T 'Os seus circuitos'
+
+# 
+O 'Graph - %s'
+T 'Gráfico - %s'
+
+# 
+O 'Circuit %s'
+T 'Circuito %s'
+
+# 
+O 'Last 24h'
+T 'Últimas 24h'
+
+# 
+O 'Last Week'
+T 'Na semana passada'
+
+# 
+O 'Last Month'
+T 'No mês passado'
+
+# 
+O 'Logged out'
+T 'Desligado'
+
+# 
+O 'Thank's for visiting'
+T 'Obrigado pela visita'
+
+# 
+O 'Login again'
+T 'Inicie a sessão novamente'
+
+
+# 
+O 'Your technical support request with subject '%s' has been sent.'
+T 'O seu pedido de assistência técnica com o assunto '%s' foi enviado'
+
+# 
+O 'You will get a confirmation to %s and we will contact you shortly'
+T 'Você receberá uma confirmação em %s e será contactado em breve'
+
+# 
+O 'Support'
+T 'Assistência'
+
+# 
+O 'Maxnet Customer Support'
+T 'Maxnet - Apoio ao Cliente'
+
+# 
+O 'Maxnet Customer Support Center'
+T 'Centro de Apoio ao Cliente da Maxnet'
+
+# 
+O 'Your Contacts'
+T 'os seus contactos'
+
+# 
+O 'Enter your last name'
+T 'Introduza o seu último nome'
+
+# 
+O 'Add new contact'
+T 'Adicione um novo contacto'
+
+# 
+O 'Technical support'
+T 'Apoio Técnico'
+
+# 
+O 'Customer of Internet Technologies Angola only'
+T 'Apenas cliente da Internet Technologies Angola '
+
+# 
+O 'Request form'
+T 'Formulário de pedido'
+
+# 
+O 'Tel:'
+T 'Tel:'
+
+# 
+O 'All other contact please visit our website:'
+T 'Para os restantes contactos, por favor visite o nosso website'
+
+# 
+O 'The ITA/Maxnet support team is happy to assist you with technical requests. For this we maintain a contact database for you or your company.'
+T 'A equipa de apoio do ITA/Maxnet está feliz em assisti-lo nos seus pedidos técnicos. Para tal nós mantemos uma base de dados de contactos para si ou para a sua companhia'
+
+# 
+O 'These are your contacts we currently have in our database. You can add or modify entries if you feel they are wrong. We will use these to contact you on service related events.'
+T 'Estes são os seus contactos actualmente existentes na nossa base de dados. Você pode adicionar ou modificar entradas se perceber que estão erradas.Nós iremos usar esta informação para contacta-lo no caso de ocorrência de eventos relacionados com o serviço.'
+
+# 
+O 'After hours:'
+T 'Fora do expediente'
+
+# 
+O 'Add a new contact'
+T 'Adicione um novo contacto'
+
+# 
+O 'Contacts'
+T 'Contactos'
+
+# 
+O 'Name'
+T 'Nome'
+
+# 
+O '(Firstname/Lastname)'
+T '(Primeiro Nome/Último)'
+
+# 
+O 'Work'
+T 'Trabalho'
+
+# 
+O 'Private'
+T 'Privado'
+
+# 
+O 'Other'
+T 'Outro'
+
+# 
+O 'Phone Mobile'
+T 'Telemóvel'
+
+# 
+O 'Phone Fixed'
+T 'Telefone'
+
+# 
+O 'Position'
+T 'Posição'
+
+# 
+O 'e.g. financial directory'
+T 'Ex.:directório financeiro'
+
+# 
+O 'Any notes'
+T 'Qualquer nota'
+
+# 
+O 'Save'
+T 'Salvar'
+
+# 
+O 'Edit contact'
+T 'Edite o contacto'
+
+# 
+O 'Change contact'
+T 'Modifique o contacto'
+
+# 
+O 'Delete contact'
+T 'Apague o contacto'
+
+# 
+O 'Delete? Are you sure?'
+T 'Eliminar?Tem certeza?'
+
+# 
+O 'List of contacts'
+T 'Lista de contactos'
+
+# 
+O 'Back to support center'
+T 'Voltar ao centro de suporte'
+
+# 
+O 'Edit email %s'
+T 'Editar correio'
+
+# 
+O 'Leave password fields empty to keep the current one.'
+T 'Deixe os campos de senha em branco para manter a actual'
+
+# 
+O 'Update'
+T 'Actulizar'
+
+# 
+O 'Phone'
+T 'Telefone'
+
+# 
+O 'Mobile'
+T 'Telemóvel'
+
+# 
+O 'Fixed'
+T 'Fixo'
+
+# 
+O 'eg. 'technical', 'finance'..'
+T 'Ex.:'técnico', 'finanças''
+
+# 
+O '(No Contacts defined)'
+T '(Não existem contactos definidos)'
+
+# 
+O 'Please take one minute to fill out your contact details before we can open a support request.'
+T 'Por favor, reserve um minuto para preencher os seus detalhes de contacto antes de abrir um pedido de assistência'
+
+# 
+O 'Add Contact'
+T 'Adicione um contacto'
+
+# 
+O 'New technical request'
+T 'Novo pedido técnico'
+
+# 
+O 'Technical Support'
+T 'Assistência Técnica'
+
+# 
+O '(n/a)'
+T '(n/a)'
+
+# 
+O 'Network down'
+T 'Rede desligada'
+
+# 
+O 'Network performance'
+T 'Performance da rede'
+
+# 
+O 'Request technical assistance'
+T 'Solicite assist~encia técnica'
+
+# 
+O 'Send'
+T 'Enviar'
+
+# 
+O 'Specify a subject'
+T 'Especifique o assunto'
+
+# 
+O 'Type a details request'
+T 'Introduza um pedido de detalhes' 
+
+# 
+O 'Request sent!'
+T 'Pedido enviado!'
+
+
+# 
+O 'Welcome to My Maxnet. This interface allows you to modify various settings of the service Maxnet is providing to you.'
+T 'Bem vindo a Maxnet. Esta página permite-lhe modificar vários parámetros do serviço que a Maxnet lhe está a fornecer'
+
+# 
+O 'Log Out'
+T 'Sair'
+
+# 
+O 'Circuits'
+T 'Circuitos'
+
+# 
+O 'Graph'
+T 'Gráficos'
+
+# 
+O 'Bandwidth Utilization for %s'
+T 'Utilização da Largura de Banda para %s'
+
+# 
+O 'Circuit %s - Bandwidth Utilization'
+T 'Circuito %s - Utilização da Largura de Banda'
+
+# 
+O 'Last Year'
+T 'Ano passado'
+
+# 
+O 'IP configuration'
+T 'Configuração IP'
+
+# 
+O 'Circuit %s - IP Configuration'
+T 'Circuito %s - Configuração IP'
+
+# 
+O 'Hosts/Net: %s'
+T 'Hosts/Net: %s'
+
+# 
+O 'Gateway'
+T ''
+
+# 
+O 'Your first IP'
+T 'Seu primeiro endereço IP'
+
+# 
+O 'Your last IP'
+T 'Seu último endereço IP'
+
+# 
+O 'Broadcast address'
+T 'Endereço de Broadcast'
+
+# 
+O 'No configuration available, please contact us.'
+T 'Sem nenhuma configuração disponível, Contacte-nos por favor'
+
+# 
+O 'Static route with gateway: %s'
+T 'Rota estática com Gateway'
+
+# 
+O 'Email Forwarding'
+T 'Encaminhamento de Correio Electrónico'
+
+# 
+O 'POP3'
+T 'POP3'
+
+# 
+O 'SMTP'
+T 'SMTP'
+
+# 
+O 'IMAP'
+T 'IMAP'
+
+# 
+O 'Mail in INBOX'
+T 'Mensagens na sua caixa'
+
+# 
+O 'Are you sure?'
+T 'Tem certeza?'
+
+# 
+O 'Delete this E-Mail!'
+T 'Apagar esta Conta'
+
+# 
+O 'Auto reply / Vacation Message'
+T 'Resposta automática / Mensagem de Férias'
+
+# 
+O 'Autoreply will automatically answer every incoming mail with the text below.'
+T 'A resposta automática irá de imediato responder a todas as mensagens que chegarem com o texto abaixo'
+
+# 
+O 'Auto Reply enable'
+T 'Activar Resposta automática'
+
+# 
+O 'Utilization'
+T 'Utilização da Largura de Banda'
+
+# 
+O 'Configuration'
+T 'Configuração'
+
+# 
+O ''
+T ''
+
+# 
+O 'Your email settings have not applied yet or are incorrect. Please contact maxnet support.'
+T ''
+
+# 
+O 'No Emails defined'
+T ''
+
+# 
+O '(no name)'
+T ''
+
+# 
+O 'Login to setup your Email'
+T ''
+
+# 
+O 'Login to change one Email'
+T ''
+
+# 
+O 'Login here to change one single email. To manage other emails and your circuits, use My Maxnet.'
+T ''
+
+# 
+O 'Your Email Address'
+T ''
+
+# 
+O 'Login to My Maxnet'
+T ''
+
+# 
+O 'My Maxnet Login'
+T ''
+
+# 
+O 'Email Login'
+T ''
+
+# 
+O 'Preferences'
+T ''
+
+# 
+O 'Your full name'
+T ''
+
+# 
+O 'Nothing changed'
+T ''
+
+# 
+O 'Email updated'
+T ''
+
+# 
+O 'Delete this Contact!'
+T ''

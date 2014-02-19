@@ -1,0 +1,25 @@
+
+<small><%= _("An email alias is a virtual email address. It will forward incoming mail to one or more addresses. ") +
+       "<br>" + 
+       _("For example sales@yourdomain.com can forward a mail to all your sales staff.") %></small>
+<br>
+<br>
+<table>
+<TR>
+  <TD><%= _("Alias Address") + ":" %></TD>
+  <TD><%= f.text_field 'email_username', :size=>16 %><b style='font-size:12pt'>@</b>
+  <%= select 'alias', 'email_domain',@session[:user].customer.domains.collect { |d| [d.domain_name, d.domain_name ] } %>
+ </TD>
+</TR>
+<tr>
+<TD valign='top'><%= _("Forward to") %>:<br><small><%= _("Separate emails with a comma (,)") %></small></TD>
+<td><%= f.text_area 'alias_list' %></td>
+</tr>
+
+<tr><TD><br></TD></tr>
+
+
+
+
+</table>
+
